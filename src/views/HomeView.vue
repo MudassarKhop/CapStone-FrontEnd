@@ -1,9 +1,5 @@
 <template>
 	<section id="home">
-		<div class="page">
-			<div class="child1"></div>
-			<div class="child2"></div>
-		</div>
 		<!-- loading screen -->
 		<div id="splash">
 			<div class="anim">

@@ -1,61 +1,134 @@
 <template>
 	<section id="footer">
-		<div class="footer1"></div>
-		<div class="footer2">
-			<div class="boxes">
-				<h1>things</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil culpa,
-					i
-				</p>
-				<ul>
-					<li><i class="fa-solid fa-chevron-right"></i> 1</li>
-					<li><i class="fa-solid fa-chevron-right"></i> 1</li>
-					<li><i class="fa-solid fa-chevron-right"></i> 1</li>
-				</ul>
+		<div id="footer1">
+			<div class="follow">
+				<h1>Follow Us</h1>
+				<div class="icons">
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+					<a href=""><i class="fa-brands fa-facebook"></i></a>
+					<a href=""><i class="fa-solid fa-at"></i></a>
+					<a href=""><i class="fa-brands fa-linkedin"></i></a>
+				</div>
 			</div>
-			<div class="boxes">
-				<h1>things</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil culpa,
-					i
-				</p>
-				<ul>
-					<li><i class="fa-solid fa-chevron-right"></i> 1</li>
-					<li><i class="fa-solid fa-chevron-right"></i> 1</li>
-					<li><i class="fa-solid fa-chevron-right"></i> 1</li>
-				</ul>
-			</div>
-			<div class="boxes">
-				<h1>things</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil culpa,
-					i
-				</p>
-				<img
-					width="140"
-					height="90"
-					src="https://i.postimg.cc/fWFn8r7P/kindpng-4937901.png"
-					alt=""
-				/>
-			</div>
-			<div class="boxes">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79041.7406258557!2d-1.3911115949449724!3d51.75032890320518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48713380adc41faf%3A0xc820dba8cb547402!2sOxford%2C%20UK!5e0!3m2!1sen!2sza!4v1661776624736!5m2!1sen!2sza"
-					width="100%"
-					height="100%"
-					style="border: 0"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-				></iframe>
+			<div class="follow1">
+				<h1>Sign Up</h1>
+				<form class="example" action="/action_page.php">
+					<input type="email" placeholder="Email.." name="search2" />
+					<button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+				</form>
 			</div>
 		</div>
-		<div class="footer3">
-			<a href="#"
-				><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES/ ALL RIGHTS
-				RESERVED</a
-			>
+		<div id="footer2">
+			<div id="boxes1">
+				<h1><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES</h1>
+				<div class="paragraph1">
+					<p>
+						Here at Oxfords we work hard so you dont have to. Our dev team are
+						currently working on the OXFORD-AIRLINES app coming soon to Google
+						Play Store and Apple App Store
+					</p>
+					<div id="img">
+						<a href="https://play.google.com" target="_blank">
+							<img
+								height="40"
+								width="120"
+								src="https://i.postimg.cc/0NwDcrD6/png-monster-28111.png"
+								alt=""
+							/>
+						</a>
+						<a href="https://apple.com/app-store/" target="_blank">
+							<img
+								height="40"
+								width="120"
+								src="https://i.postimg.cc/fRFYcYtn/png-monster-281111.png"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div id="boxes">
+				<div class="h1box">
+					<h1>Our Locations</h1>
+				</div>
+				<div class="content">
+					<div class="paragraph">
+						<p>
+							Come meet us at one of our luxurious offices around the world.
+						</p>
+					</div>
+					<div id="ul">
+						<ul>
+							<li><i class="fa-solid fa-chevron-right"></i> Cape Town</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
+							<li><i class="fa-solid fa-chevron-right"></i> London</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div id="boxes">
+				<div class="h1box">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<div class="paragraph">
+						<p>Learn more about us through what others have to say.</p>
+					</div>
+					<div id="ul">
+						<ul>
+							<li>
+								<i class="fa-solid fa-chevron-right"></i>
+								<router-link to=""> Certification</router-link>
+							</li>
+							<li>
+								<i class="fa-solid fa-chevron-right"></i>
+								<router-link to=""> FAQs</router-link>
+							</li>
+							<li>
+								<i class="fa-solid fa-chevron-right"></i>
+								<router-link to=""> Testimonials</router-link>
+							</li>
+							<li>
+								<i class="fa-solid fa-chevron-right"></i>
+								<router-link to=""> Pilot's Reviews</router-link>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div id="boxes">
+				<div class="h1box">
+					<h1>Where To Fly</h1>
+				</div>
+				<div class="content">
+					<div class="paragraph">
+						<p>
+							Travel to your location of choice in style with our private jets.
+						</p>
+					</div>
+					<div id="ul">
+						<ul>
+							<li><i class="fa-solid fa-chevron-right"></i> Singapore</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Bali</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Qatar</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Hong-Kong</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer3">
+			<div class="copyright">
+				<h1>
+					ALL RIGHTS RESERVED/ <i class="fa-solid fa-plane-up"></i>
+					OXFORD-AIRLINES © 2022
+				</h1>
+			</div>
 		</div>
 	</section>
 </template>
@@ -64,79 +137,240 @@
 </script>
 <style scoped>
 	#footer {
-		min-height: 45vh;
-		background-color: red;
-	}
-	.footer1 {
-		min-height: 5vh;
+		height: 50vh;
 		background-color: #16253d;
-		border-top: 1px solid #d9b44a;
 	}
-	.footer2 {
-		min-height: 35vh;
-		background-color: #263b5c;
+	#footer1 {
+		height: 20vh;
+		background-color: #16253d;
+		/* border-bottom: 1px solid rgba(128, 128, 128, 0.926); */
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
-		gap: 10px;
 	}
-	.boxes {
-		width: 22%;
-		height: 220px;
+	#footer2 {
+		height: 40vh;
+		background-color: #16253d;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		gap: 20px;
+	}
+	.follow {
+		width: 300px;
+		height: 130px;
+		/* border: 1px solid red; */
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		/* border: 1px solid red; */
+		justify-items: center;
+		align-items: flex-start;
+		padding: 10px;
 		color: white;
+		border-bottom: 1px solid #d9b44a;
 	}
-	.boxes h1 {
-		text-align: center;
-		color: #d9b44a;
-		text-shadow: 2px 2px solid black;
+	.follow h1 {
+		font-size: 25px;
+		margin-bottom: 0;
 	}
-	ul {
-		list-style-type: none;
-		line-height: 30px;
+	.follow1 h1 {
+		font-size: 25px;
+		margin-bottom: 0;
 	}
-	.footer3 {
+	form {
+		height: 80%;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
-		min-height: 5vh;
-		background-color: #16253d;
-		text-align: center;
-		color: white;
-		border-top: 1px solid #d9b44a;
+		justify-items: center;
+		align-items: center;
 	}
-	.fa-chevron-right {
-		color: #d9b44a;
+	form.example input[type="email"] {
+		padding: 10px;
+		font-size: 17px;
+		border: 1px solid grey;
+		width: 455px;
+		height: 30px;
+		background: #f1f1f1;
 	}
-	a {
-		text-decoration: none;
+
+	form.example button {
+		width: 20%;
+		height: 30px;
+		background: #d9b44a;
 		color: white;
-		font-size: 10px;
+		font-size: 17px;
+		border: 1px solid grey;
+		border-left: none;
+		cursor: pointer;
+	}
+
+	form.example button:hover {
+		background-color: #d9b34ac5;
+	}
+
+	form.example::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.follow1 {
+		width: 500px;
+		height: 130px;
+		/* border: 1px solid red; */
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-items: center;
+		align-items: flex-start;
+		padding: 10px;
+		color: white;
+		border-bottom: 1px solid #d9b44a;
+	}
+	.icons {
+		height: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.fa-instagram {
+		font-size: 25px;
+		margin-right: 15px;
+		color: white;
+	}
+	.fa-whatsapp {
+		font-size: 25px;
+		margin-right: 15px;
+		color: white;
+	}
+	.fa-facebook {
+		font-size: 25px;
+		margin-right: 15px;
+		color: white;
+	}
+	.fa-linkedin {
+		font-size: 25px;
+		margin-right: 15px;
+		color: white;
+	}
+	.fa-at {
+		font-size: 25px;
+		margin-right: 15px;
+		color: white;
 	}
 	.fa-plane-up {
 		color: #d9b44a;
 	}
-	@media only screen and (max-width: 996px) {
-		.boxes {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: nowrap;
-			justify-content: center;
-			align-content: center;
-			width: 80%;
-		}
-		.footer2 {
-			padding: 10px;
-			gap: 20px;
-		}
+	.fa-chevron-right {
+		color: #d9b44a;
+	}
+	#boxes {
+		height: 80%;
+		width: 20%;
+		/* border: 1px solid red; */
+		padding: 10px;
+	}
+	#img {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+	}
+	#boxes1 {
+		height: 80%;
+		width: 20%;
+		/* border: 1px solid red; */
+		padding: 21px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: start;
+		align-content: flex-start;
+	}
+	#boxes1 h1 {
+		font-size: 25px;
+		color: white;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.h1box {
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: start;
+		align-content: flex-start;
+	}
+	.h1box h1 {
+		font-size: 25px;
+		color: white;
+		margin-bottom: 0;
+	}
+	.content {
+		height: 80%;
+		width: 100%;
+	}
+
+	.paragraph {
+		height: 40%;
+		text-align: start;
+		color: rgba(255, 255, 255, 0.507);
+		margin-bottom: -10px;
+	}
+	.paragraph1 {
+		font-size: 14px;
+		height: 40%;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.507);
+	}
+	ul {
+		height: 40%;
+		color: rgba(255, 255, 255, 0.752);
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		justify-items: start;
+		align-items: flex-start;
+		margin: 0;
+		padding: 0;
+	}
+	ul a {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.752);
+	}
+	ul a:hover {
+		text-decoration: none;
+		color: #d9b44a;
+	}
+	#footer3 {
+		height: 5vh;
+		background-color: #223655;
+		padding: 10px;
+	}
+	.copyright {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		padding: 4px;
+	}
+	.copyright h1 {
+		letter-spacing: 1px;
+		font-size: 10px;
+		color: white;
+	}
+	.line {
+		height: 80%;
+		width: 1px;
+		background-color: #d9b44a;
 	}
 </style>

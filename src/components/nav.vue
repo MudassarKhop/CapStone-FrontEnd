@@ -1,19 +1,22 @@
 <template>
 	<nav id="nav" class="navbar navbar-expand-lg">
 		<div class="container-fluid">
-			<a class="navbar-brand text-light" href="#"
-				><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES</a
+			<router-link to="/" class="navbar-brand text-light"
+				><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES</router-link
 			>
+
 			<button
 				class="navbar-toggler"
-				type="button"
+				type="button text-light"
 				data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent"
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-icon border-none"
+					><i class="fa-solid fa-bars"></i
+				></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul id="list" class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -30,7 +33,7 @@
 						<router-link to="/jets">Jets</router-link>
 					</li>
 					<li class="nav-item">
-						<router-link to="/contact">Contact Us</router-link>
+						<router-link to="/contactus">Contact Us</router-link>
 					</li>
 				</ul>
 				<form class="d-flex" role="search">
@@ -78,6 +81,9 @@
 		transition: 0.3s ease-in;
 		text-decoration: none;
 	}
+	.navbar-brand:hover {
+		color: #d9b44a;
+	}
 	a:hover {
 		color: #d9b34ab7;
 		transition: 0.3s ease-in;
@@ -85,6 +91,10 @@
 	.navbar-nav .nav-link.active,
 	.navbar-nav .show > .nav-link {
 		color: #d9b44a;
+	}
+	.fa-bars {
+		color: #d9b44a;
+		font-size: 30px;
 	}
 	@media only screen and (max-width: 996px) {
 		#list {
