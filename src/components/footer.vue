@@ -203,13 +203,14 @@
 		font-size: 17px;
 		border: 1px solid grey;
 		width: 455px;
-		height: 30px;
-		background: #f1f1f1;
+		height: 40px;
+		border: none;
+		background: #223655;
 	}
 
 	form.example button {
 		width: 20%;
-		height: 30px;
+		height: 40px;
 		background: #d9b44a;
 		color: white;
 		font-size: 17px;
