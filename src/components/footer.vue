@@ -4,11 +4,21 @@
 			<div class="follow">
 				<h1>Follow Us</h1>
 				<div class="icons">
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-whatsapp"></i></a>
-					<a href=""><i class="fa-brands fa-facebook"></i></a>
-					<a href=""><i class="fa-solid fa-at"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://instagram.com" target="_blank"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+					<a href="https://whatsapp.com" target="_blank"
+						><i class="fa-brands fa-whatsapp"></i
+					></a>
+					<a href="https://facebook.com" target="_blank"
+						><i class="fa-brands fa-facebook"></i
+					></a>
+					<a href="https://gmail.com" target="_blank"
+						><i class="fa-solid fa-at"></i
+					></a>
+					<a href="https://linkedin.com" target="_blank"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
 				</div>
 			</div>
 			<div class="follow1">
@@ -206,10 +216,12 @@
 		border: 1px solid grey;
 		border-left: none;
 		cursor: pointer;
+		transition: 0.3s ease-in;
 	}
 
 	form.example button:hover {
 		background-color: #d9b34ac5;
+		transition: 0.3s ease-in;
 	}
 
 	form.example::after {
@@ -238,31 +250,125 @@
 		justify-items: center;
 		align-items: center;
 	}
-
-	.fa-instagram {
+	.fa-linkedin {
 		font-size: 25px;
-		margin-right: 15px;
+		display: inline-block;
+		background: #2c3e50;
 		color: white;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		/* border-radius: 50%; */
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		transition: 0.3s;
+		/* border: 1px solid #b1b942; */
+		transition: 1s;
 	}
 	.fa-whatsapp {
 		font-size: 25px;
-		margin-right: 15px;
+		display: inline-block;
+		background: #2c3e50;
 		color: white;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		/* border-radius: 50%; */
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		transition: 0.3s;
+		/* border: 1px solid #b1b942; */
+		transition: 1s;
+	}
+	.fa-instagram {
+		font-size: 25px;
+		display: inline-block;
+		background: #2c3e50;
+		color: white;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		/* border-radius: 50%; */
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		transition: 0.3s;
+		/* border: 1px solid #b1b942; */
+		transition: 1s;
 	}
 	.fa-facebook {
 		font-size: 25px;
-		margin-right: 15px;
+		display: inline-block;
+		background: #2c3e50;
 		color: white;
-	}
-	.fa-linkedin {
-		font-size: 25px;
-		margin-right: 15px;
-		color: white;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		/* border-radius: 50%; */
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		/* border: 1px solid #b1b942; */
+		transition: 1s;
 	}
 	.fa-at {
 		font-size: 25px;
-		margin-right: 15px;
+		display: inline-block;
+		background: #2c3e50;
 		color: white;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		/* border-radius: 50%; */
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		/* border: 1px solid #b1b942; */
+		transition: 1s;
+	}
+	.fa-at:hover {
+		color: #8a0606;
+		background-color: white;
+		transition: 1s;
+	}
+	.fa-linkedin:hover {
+		color: #0077b5;
+		background-color: white;
+		transition: 1s;
+	}
+	.fa-whatsapp:hover {
+		background-color: #28d347;
+		color: white;
+		transition: 1s;
+	}
+	.fa-facebook:hover {
+		background-color: white;
+		color: #4867aa;
+		transition: 1s;
+	}
+	.fa-twitter:hover {
+		background-color: white;
+		color: #1da1f2;
+		transition: 1s;
+	}
+	.fa-whatsapp:hover {
+		background-color: #28d347;
+		color: white;
+		transition: 1s;
+	}
+	.fa-instagram:hover {
+		background: radial-gradient(
+			circle at 33% 100%,
+			#fed373 4%,
+			#f15245 30%,
+			#d92e7f 62%,
+			#9b36b7 85%,
+			#515ecf
+		);
+		color: white;
+		transition: 1s;
 	}
 	.fa-plane-up {
 		color: #d9b44a;
@@ -345,10 +451,12 @@
 	ul a {
 		text-decoration: none;
 		color: rgba(255, 255, 255, 0.752);
+		transition: 0.3s ease-in;
 	}
 	ul a:hover {
 		text-decoration: none;
 		color: #d9b44a;
+		transition: 0.3s ease-in;
 	}
 	#footer3 {
 		height: 5vh;
