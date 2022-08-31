@@ -4,18 +4,18 @@
 		<button
 			class="navbar-toggler"
 			type="button"
-			data-mdb-toggle="collapse"
-			data-mdb-target="#navbarSupportedContent"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent"
 			aria-expanded="false"
 			aria-label="Toggle navigation"
 		>
-			<i class="fas fa-bars"></i>
+			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="container d-flex justify-content-center">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center mb-3">
-					<router-link to="/" class="navbar-brand text-light"
+					<router-link to="/" id="navbar-brand" class="navbar-brand"
 						><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES</router-link
 					>
 				</div>
@@ -61,8 +61,9 @@
 		background-color: #d9b44a;
 		transition: 0.5s ease-in;
 	}
-	#list {
-		margin-left: 29%;
+	.nav-item {
+		font-size: 25px;
+		margin-right: 20px;
 	}
 	.fa-plane-up {
 		color: #d9b44a;
@@ -76,8 +77,11 @@
 		transition: 0.3s ease-in;
 		text-decoration: none;
 	}
-	.navbar-brand:hover {
-		color: #d9b44a;
+	#navbar-brand {
+		color: white;
+	}
+	#navbar-brand:hover {
+		color: #d9b34ab7;
 	}
 	a:hover {
 		color: #d9b34ab7;
@@ -91,6 +95,7 @@
 		color: #d9b44a;
 		font-size: 30px;
 	}
+
 	@media only screen and (max-width: 996px) {
 		#list {
 			margin-left: 0;
