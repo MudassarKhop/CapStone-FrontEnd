@@ -202,7 +202,6 @@
 	form.example input[type="email"] {
 		padding: 10px;
 		font-size: 17px;
-		border: 1px solid grey;
 		width: 455px;
 		height: 40px;
 		border: none;

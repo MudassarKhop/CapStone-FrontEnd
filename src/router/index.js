@@ -40,6 +40,14 @@ const routes = [
 			);
 		},
 	},
+	{
+		path: "/flights/:id",
+		name: "singleview",
+		component: function () {
+			return import(/* webpackChunkName: "about" */ "../views/SingleView.vue");
+		},
+		props: true,
+	},
 ];
 
 const router = createRouter({

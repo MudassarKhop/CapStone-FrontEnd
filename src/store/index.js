@@ -29,13 +29,20 @@ export default createStore({
 	},
 	actions: {
 		getFlight: async (context, id) => {
-			fetch("http://localhost:6969/flights/:id" + id)
+			fetch("https://capstone-api-mudassar.herokuapp.com/flights/" + id, {
+				// mode: "no-cors",
+			})
 				.then((res) => res.json())
 				.then((json) => context.commit("setFlight", json))
 				.catch((err) => console.log(err.message));
 		},
 		getFlights: async (context) => {
-			fetch("http://localhost:6969/flights")
+			fetch(
+				"https://capstone-api-mudassar.herokuapp.com/flights"
+				// , {
+				// 	mode: "no-cors",
+				// }
+			)
 				.then((response) => response.json())
 				.then((json) => context.commit("setFlights", json));
 		},
