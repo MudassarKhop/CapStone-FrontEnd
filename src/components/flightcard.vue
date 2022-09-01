@@ -2,9 +2,10 @@
 	<router-link :to="{ name: 'singleview', params: { id: flight.flight_id } }">
 		<div class="boarding-pass">
 			<header>
-				<svg class="logo">
-					<use xlink:href="#alitalia"></use>
-				</svg>
+				<div class="logo">
+					<i class="fa-solid fa-plane-up"></i>
+					OXFORD-AIRLINES
+				</div>
 				<div class="flight">
 					<small>flight</small>
 					<strong>{{ flight.flight_id }}</strong>
@@ -14,12 +15,12 @@
 				<div class="city">
 					<small>{{ flight.from_destination }}</small>
 
-					<strong>LIN</strong>
+					<strong>{{ flight.fda }}</strong>
 				</div>
 				<div class="city">
 					<small>{{ flight.to_destination }}</small>
 
-					<strong>ORY</strong>
+					<strong>{{ flight.tda }}</strong>
 				</div>
 				<svg class="airplane">
 					<use xlink:href="#airplane"></use>
@@ -47,36 +48,28 @@
 				<div class="times">
 					<div class="box">
 						<small>Boarding</small>
-						<strong>19:50</strong>
+						<strong>{{ flight.boarding }}</strong>
 					</div>
 					<div class="box">
 						<small>Departure</small>
-						<strong>20:20</strong>
+						<strong>{{ flight.departure }}</strong>
 					</div>
 					<div class="box">
 						<small>Duration</small>
 						<strong>{{ flight.duration }}</strong>
 					</div>
-					<div class="box">
-						<small>Arrival</small>
-						<strong>21:30</strong>
-					</div>
 				</div>
 			</section>
 			<section class="strap">
 				<div class="box">
-					<div class="passenger">
-						<small>passenger</small>
-						<strong>Fabio Ottaviani</strong>
-					</div>
 					<div class="date">
 						<small>Date</small>
 						<strong>{{ flight.flight_date }}</strong>
 					</div>
+					<svg class="qrcode">
+						<use xlink:href="#qrcode"></use>
+					</svg>
 				</div>
-				<svg class="qrcode">
-					<use xlink:href="#qrcode"></use>
-				</svg>
 			</section>
 		</div>
 
@@ -258,9 +251,13 @@
 	};
 </script>
 <style scoped>
+	.fa-plane-up {
+		color: #d9b44a;
+	}
 	a {
 		width: 300px;
 	}
+
 	#card {
 		display: flex;
 		flex-direction: column;
@@ -417,7 +414,7 @@ Boarding Pass
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
-		border-top: 1px solid #99d298;
+		border-top: 1px solid #d9b44a;
 	}
 	.boarding-pass .infos .places,
 	.boarding-pass .infos .times {
@@ -438,13 +435,13 @@ Boarding Pass
 	}
 	.boarding-pass .infos .places {
 		background: #e2efe2;
-		border-right: 1px solid #99d298;
+		border-right: 1px solid #d9b44a;
 	}
 	.boarding-pass .infos .places small {
 		color: #97a1ad;
 	}
 	.boarding-pass .infos .places strong {
-		color: #239422;
+		color: #d9b44a;
 	}
 	.boarding-pass .infos .box {
 		padding: 10px 20px 10px;
@@ -482,9 +479,6 @@ Boarding Pass
 		top: -5px;
 	}
 	.boarding-pass .strap .qrcode {
-		position: absolute;
-		top: 20px;
-		right: 20px;
 		width: 80px;
 		height: 80px;
 	}
