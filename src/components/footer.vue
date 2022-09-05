@@ -1,6 +1,6 @@
 <template>
 	<section id="footer">
-		<div id="footer1">
+		<!-- <div id="footer1">
 			<div class="follow">
 				<h1>Follow Us</h1>
 				<div class="icons">
@@ -21,23 +21,12 @@
 					></a>
 				</div>
 			</div>
-			<div class="follow1">
-				<h1>Sign Up</h1>
-				<form class="example" action="/action_page.php">
-					<input type="email" placeholder="Email.." name="search2" />
-					<button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-				</form>
-			</div>
-		</div>
+		</div> -->
 		<div id="footer2">
 			<div id="boxes1">
 				<h1><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES</h1>
 				<div class="paragraph1">
-					<p>
-						Here at Oxfords we work hard so you dont have to. Our dev team are
-						currently working on the OXFORD-AIRLINES app coming soon to Google
-						Play Store and Apple App Store.
-					</p>
+					<p>Coming soon to Google Playstore and App store.</p>
 					<div id="img">
 						<a href="https://play.google.com" target="_blank">
 							<img
@@ -58,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="line"></div>
+			<div class="gap"></div>
 			<div id="boxes">
 				<div class="h1box">
 					<h1>Our Locations</h1>
@@ -131,6 +120,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="line"></div>
 		</div>
 		<div id="footer3">
 			<div class="copyright">
@@ -147,22 +137,12 @@
 </script>
 <style scoped>
 	#footer {
-		height: 50vh;
+		min-height: 40vh;
 		background-color: #16253d;
-	}
-	#footer1 {
-		height: 20vh;
-		background-color: #16253d;
-		/* border-bottom: 1px solid rgba(128, 128, 128, 0.926); */
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
-		border-top: 1px solid #d9b44a;
+		width: 100%;
 	}
 	#footer2 {
-		height: 40vh;
+		min-height: 40vh;
 		background-color: #16253d;
 		display: flex;
 		flex-direction: row;
@@ -170,6 +150,17 @@
 		justify-content: center;
 		align-content: center;
 		gap: 20px;
+	}
+	#footer3 {
+		min-height: 5vh;
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-items: center;
+		align-items: center;
+	}
+	.gap {
+		width: 60px;
 	}
 	.follow {
 		width: 300px;
@@ -179,10 +170,9 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-items: center;
-		align-items: flex-start;
+		align-items: center;
 		padding: 10px;
 		color: white;
-		border-bottom: 1px solid #d9b44a;
 	}
 	.follow h1 {
 		font-size: 25px;
@@ -191,44 +181,6 @@
 	.follow1 h1 {
 		font-size: 25px;
 		margin-bottom: 0;
-	}
-	form {
-		height: 80%;
-		display: flex;
-		flex-direction: row;
-		justify-items: center;
-		align-items: center;
-	}
-	form.example input[type="email"] {
-		padding: 10px;
-		font-size: 17px;
-		width: 455px;
-		height: 40px;
-		border: none;
-		background: #223655;
-	}
-
-	form.example button {
-		width: 20%;
-		height: 40px;
-		background: #d9b44a;
-		color: white;
-		font-size: 17px;
-		border: 1px solid grey;
-		border-left: none;
-		cursor: pointer;
-		transition: 0.3s ease-in;
-	}
-
-	form.example button:hover {
-		background-color: #d9b34ac5;
-		transition: 0.3s ease-in;
-	}
-
-	form.example::after {
-		content: "";
-		clear: both;
-		display: table;
 	}
 
 	.follow1 {
@@ -239,7 +191,7 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-items: center;
-		align-items: flex-start;
+		align-items: center;
 		padding: 10px;
 		color: white;
 		border-bottom: 1px solid #d9b44a;
@@ -378,7 +330,7 @@
 		color: #d9b44a;
 	}
 	#boxes {
-		height: 80%;
+		min-height: 60%;
 		width: 20%;
 		/* border: 1px solid red; */
 		padding: 10px;
@@ -391,15 +343,14 @@
 		align-content: center;
 	}
 	#boxes1 {
-		height: 80%;
+		min-height: 60%;
 		width: 20%;
 		/* border: 1px solid red; */
-		padding: 21px;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
-		justify-content: start;
-		align-content: flex-start;
+		justify-content: center;
+		align-content: center;
 	}
 	#boxes1 h1 {
 		font-size: 25px;
@@ -469,17 +420,76 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
-		align-items: center;
-		padding: 4px;
+		align-content: center;
 	}
 	.copyright h1 {
 		letter-spacing: 1px;
 		font-size: 10px;
 		color: white;
+		margin: 0;
 	}
 	.line {
 		height: 80%;
-		width: 1px;
+		width: 2px;
 		background-color: #d9b44a;
+	}
+	@media only screen and (max-width: 1330px) {
+		#footer {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			align-items: center;
+		}
+		#footer2 {
+			margin-top: 20px;
+			gap: 20px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			align-items: center;
+		}
+		#footer3 {
+			width: 100%;
+		}
+		.gap {
+			display: none;
+		}
+		#boxes {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+		}
+		#boxes1 {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-items: center;
+			align-items: center;
+		}
+		.h1box {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-items: start;
+			align-items: flex-start;
+		}
+		.paragraph {
+			text-align: start;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-items: start;
+			align-items: flex-start;
+			/* display: inline-block;
+			text-align: left; */
+		}
 	}
 </style>
