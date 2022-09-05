@@ -48,6 +48,9 @@
 	export default {};
 </script>
 <style scoped>
+	* {
+		letter-spacing: 1px;
+	}
 	.navbar {
 		background-color: #16253d;
 		border-bottom: 1px solid #d9b44a;
