@@ -48,6 +48,20 @@ const routes = [
 		},
 		props: true,
 	},
+	{
+		path: "/admin",
+		name: "admin",
+		component: function () {
+			return import(/* webpackChunkName: "about" */ "../views/AdminLogin.vue");
+		},
+	},
+	{
+		path: "/offices",
+		name: "offices",
+		component: function () {
+			return import(/* webpackChunkName: "about" */ "../views/Offices.vue");
+		},
+	},
 ];
 
 const router = createRouter({

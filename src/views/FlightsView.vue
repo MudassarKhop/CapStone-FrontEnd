@@ -71,7 +71,7 @@
 </script>
 <style scoped>
 	#about {
-		background-color: #ffffff;
+		background-color: #222222;
 		min-height: 100vh;
 	}
 	.display-Flights {

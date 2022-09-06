@@ -1,99 +1,197 @@
 <template>
-	<section id="about"> 
+	<section id="about">
 		<div class="mother">
 			<div id="child1">
 				<div class="heading">
 					<h1>Our Vision</h1>
 				</div>
 				<div class="info">
-					<p> <span>“</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus amet nesciunt aspernatur nostrum officia a repudiandae, obcaecati alias optio. Et enim culpa id suscipit. Temporibus autem doloremque exercitationem qui distinctio!</p>
-					<br>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iusto quasi alias reprehenderit vel earum ipsa! Veritatis iure perferendis cumque! Distinctio debitis hic odio deleniti voluptas error eaque deserunt sit!</p>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat esse earum ad illo sint quo modi repudiandae amet vel consequuntur reprehenderit ratione numquam repellendus aspernatur eos sapiente unde, consequatur blanditiis.</p>
-					<br>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, laudantium corporis dicta iste exercitationem ullam consectetur quisquam nostrum, harum amet ab optio. Modi accusamus ipsum illum voluptate quae distinctio voluptates? <span>”</span></p>
+					<p>
+						<span>“</span> Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Doloribus amet nesciunt aspernatur nostrum officia a
+						repudiandae, obcaecati alias optio. Et enim culpa id suscipit.
+						Temporibus autem doloremque exercitationem qui distinctio!
+					</p>
+					<br />
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+						iusto quasi alias reprehenderit vel earum ipsa! Veritatis iure
+						perferendis cumque! Distinctio debitis hic odio deleniti voluptas
+						error eaque deserunt sit!
+					</p>
+					<br />
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+						esse earum ad illo sint quo modi repudiandae amet vel consequuntur
+						reprehenderit ratione numquam repellendus aspernatur eos sapiente
+						unde, consequatur blanditiis. <span>"</span>
+					</p>
+					<br />
 				</div>
 			</div>
 			<div id="child2">
-				<div class="heading2">
+				<img
+					style="width: 750px; height: 380px; margin-top: 10%"
+					src="https://i.postimg.cc/yYPVfD5B/kindpng-2430888.png"
+					alt=""
+				/>
+				<!-- <div class="heading2">
 					<h1>Pilot's Log</h1>
 				</div>
 				<div id="info2">
-					<p> <span>“</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus amet nesciunt aspernatur nostrum officia a repudiandae, obcaecati alias optio. Et enim culpa id suscipit. Temporibus autem doloremque exercitationem qui distinctio!</p>
-					<br>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iusto quasi alias reprehenderit vel earum ipsa! Veritatis iure perferendis cumque! Distinctio debitis hic odio deleniti voluptas error eaque deserunt sit!</p>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat esse earum ad illo sint quo modi repudiandae amet vel consequuntur reprehenderit ratione numquam repellendus aspernatur eos sapiente unde, consequatur blanditiis.</p>
-					<br>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, laudantium corporis dicta iste exercitationem ullam consectetur quisquam nostrum, harum amet ab optio. Modi accusamus ipsum illum voluptate quae distinctio voluptates? <span>”</span></p>
+					<figure class="snip1376">
+						<img
+							src="https://i.postimg.cc/fRWjc5Tj/IMG-1443-1-2.jpg"
+							alt="sample17"
+						/>
+						<figcaption>
+							<h2>Leana Paul</h2>
+							<h3>captain</h3>
+							<p>
+								I'm looking for something that can deliver a 50-pound payload of
+								snow on a small feminine target. Can you
+							</p>
+							<div class="icons">
+								<a href="#"><i class="ion-social-reddit-outline"></i></a>
+								<a href="#"> <i class="ion-social-twitter-outline"></i></a>
+								<a href="#"> <i class="ion-social-vimeo-outline"></i></a>
+							</div>
+						</figcaption>
+					</figure>
+					<figure class="snip1376 hover">
+						<img
+							src="https://i.postimg.cc/RFCB9kMJ/Faraz-Sheikh-1-759x500.jpg"
+							alt="sample47"
+						/>
+						<figcaption>
+							<h2>Riley Reid</h2>
+							<h3>co-pilot</h3>
+							<p>
+								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
+								What's misunderstood about you? Calvin:
+							</p>
+							<div class="icons">
+								<a href="#"><i class="ion-social-reddit-outline"></i></a>
+								<a href="#"> <i class="ion-social-twitter-outline"></i></a>
+								<a href="#"> <i class="ion-social-vimeo-outline"></i></a>
+							</div>
+						</figcaption>
+					</figure>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<section id="pilots">
+		<div class="mother">
+			<div id="child2">
+				<div id="info2">
+					<figure class="snip1376">
+						<img
+							src="https://i.postimg.cc/fRWjc5Tj/IMG-1443-1-2.jpg"
+							alt="sample17"
+						/>
+						<figcaption>
+							<h2>Leana Paul</h2>
+							<h3>chief captain</h3>
+							<p>
+								I'm looking for something that can deliver a 50-pound payload of
+								snow on a small feminine target. Can you
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="snip1376 hover">
+						<img
+							src="https://i.postimg.cc/RFCB9kMJ/Faraz-Sheikh-1-759x500.jpg"
+							alt="sample47"
+						/>
+						<figcaption>
+							<h2>Pete Stevenson</h2>
+							<h3>co-pilot</h3>
+							<p>
+								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
+								What's misunderstood about you? Calvin:
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="snip1376 hover">
+						<img
+							src="https://i.postimg.cc/vTWWKLrh/Screen-Shot-2020-12-08-at-3-46-17-PM.png"
+							alt="sample47"
+						/>
+						<figcaption>
+							<h2>Riley Reid</h2>
+							<h3>co-pilot</h3>
+							<p>
+								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
+								What's misunderstood about you? Calvin:
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="snip1376 hover">
+						<img
+							src="https://i.postimg.cc/C5RSmmbB/Captain-Helen-Trenerry-preparing-for-the-2019-Project-Sunrise-flight-from-London-to-Sydney-jpg.webp"
+							alt="sample47"
+						/>
+						<figcaption>
+							<h2>Karen Denvers</h2>
+							<h3>commanding officer</h3>
+							<p>
+								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
+								What's misunderstood about you? Calvin:
+							</p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="slides">
-		<div class="container2">
-			<div class="box">
-				<div class="imgBx">
-					<img src="https://i.postimg.cc/tCrQqqCt/1431931.jpg" />
-				</div>
-				<router-link to="/flights">
-					<div class="content">
-						<div>
-							<h2>Indonesia, Bali</h2>
-							<p>
-								Bali has the world's most expensive coffee. The most expensive
-								coffee in the world comes from poop.
-							</p>
-						</div>
-					</div>
-				</router-link>
-			</div>
-			<div class="box">
-				<div class="imgBx">
-					<img
-						src="https://i.postimg.cc/2j2XvHRC/eiffel-tower-paris-4k-wide-1536x864.jpg"
-					/>
-				</div>
-				<router-link to="/flights">
-					<div class="content">
-						<div>
-							<h2>France, Paris</h2>
-							<p>Paris was originally a Roman City called “Lutetia.”</p>
-						</div>
-					</div>
-				</router-link>
-			</div>
-			<div class="box">
-				<div class="imgBx">
-					<img src="https://i.postimg.cc/DZm4NyZj/2338846.jpg" />
-				</div>
-				<router-link to="/flights">
-					<div class="content">
-						<div>
-							<h2>Monaco</h2>
-							<p>
-								Monaco is the 2nd smallest country in the world, a “microstate”
-								(or city-state) of only 2 sq km.
-							</p>
-						</div>
-					</div>
-				</router-link>
-			</div>
-			<div class="box">
-				<div class="imgBx">
-					<img
-						src="https://i.postimg.cc/9FyJmVPg/wallpaperflare-com-wallpaper.jpg"
-					/>
-				</div>
-				<router-link to="/flights">
-					<div class="content">
-						<div>
-							<h2>Qatar, Doha</h2>
-							<p>Qatar is the second flattest country in the world.</p>
-						</div>
-					</div>
-				</router-link>
+	<section id="faq">
+		<div class="content">
+			<div class="center">
+				<details>
+					<summary>
+						<h2>Question #1</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+				<details>
+					<summary>
+						<h2>Question #2</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+				<details open>
+					<summary>
+						<h2>Question #3</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+				<details>
+					<summary>
+						<h2>Question #4</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
 			</div>
 		</div>
 	</section>
@@ -106,195 +204,291 @@
 	}
 	#about {
 		background-color: #222222;
-		height: 90vh;
-		display:flex;
-	flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;	}
-	.mother{
+		height: 80vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	#pilots {
+		background-color: #222222;
+		height: 80vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	.mother {
 		width: 90%;
 		height: 80%;
 		/* border: 1px solid red; */
-		display:flex;
-	flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
-	}
-	#child1{
-     width: 50%;
-	 height: 100%;
-	 /* border:1px solid green */
-	}
-	.heading{
-		height:15%;
-		width: 90%;
-		/* border: 1px solid yellow; */
-		display:flex;
-	flex-direction: row;
-flex-wrap: wrap;
-justify-content: end;
-align-content: center;
-color: white;
-
-	}
-	.heading2{
-		margin-left:10% ;
-		height:15%;
-		width: 90%;
-		/* border: 1px solid yellow; */
-		display:flex;
-	flex-direction: row;
-flex-wrap: wrap;
-justify-content: start;
-align-content: center;
-color: white;
-
-	}
-.info{
-	height: 85%;
-	display:flex;
-	flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
-width: 90%;
-}
-#info2{
-	margin-left: 10%;
-	height: 85%;
-	display:flex;
-	flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
-width: 90%;
-/* border: 1px solid purple; */
-}
-span{
-	font-size: 40px;
-	font-family:cursive;
-	color: #d9b44a;
-}
-.info p{
-	font-size: 20px;
-	text-align: end;
-	color: #84939f;
-}
-#info2 p{
-	font-size: 20px;
-	text-align: start;
-	color: #84939f;
-}
-	#child2{
-width: 50%;
-height: 100%;
-/* border:1px solid green; */
-	}
-	/* informations cards */
-	#slides {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 50vh;
-		background-color: rgb(200, 200, 200);
-	}
-	.container2 {
-		position: relative;
-		width: 100%;
-		display: flex;
-		justify-content: center;
+		flex-direction: row;
 		flex-wrap: wrap;
-		transform-style: preserve-3d;
-		perspective: 500px;
-		padding: 2%;
+		justify-content: center;
+		align-content: center;
 	}
-	.container2 .box {
-		/* position: relative; */
-		width: 280px;
-		height: 275px;
-		background: #000;
-		transition: 0.5s;
-		transform-style: preserve-3d;
-		overflow: hidden;
-		margin-right: 20px;
-	}
-	.container2:hover .box {
-		transform: rotateY(25deg);
-	}
-	.container2 .box:hover ~ .box {
-		transform: rotateY(-25deg);
-	}
-	.container2 .box:hover {
-		transform: rotateY(0deg) scale(1.25);
-		z-index: 1;
-		box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-	}
-	.container2 .box .imgBx {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
+	#child1 {
+		width: 50%;
 		height: 100%;
-	}
-	.container2 .box .imgBx:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(180deg, #16253d, #000);
-		z-index: 1;
-		opacity: 0;
-		transition: 0.5s;
-		mix-blend-mode: multiply;
-	}
-	.container2 .box:hover .imgBx:before {
-		opacity: 1;
-	}
-	.container2 .box .imgBx img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	.container2 .box .content {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
+		/* border: 1px solid green; */
 		display: flex;
-		padding: 20px;
-		align-items: flex-end;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	.heading {
+		height: 15%;
+		width: 90%;
+		/* border: 1px solid yellow; */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		color: white;
+		margin-bottom: 10px;
+	}
+	.heading2 {
+		margin-left: 3%;
+		height: 15%;
+		width: 90%;
+		/* border: 1px solid yellow; */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: start;
+		align-content: center;
+		color: white;
+	}
+	.info {
+		height: 85%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		width: 90%;
+	}
+	#info2 {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		/* border: 1px solid purple; */
+	}
+	span {
+		font-size: 40px;
+		font-family: cursive;
+		color: #d9b44a;
+	}
+	.info p {
+		font-size: 20px;
+		text-align: center;
+		color: #84939f;
+	}
+	#info2 p {
+		font-size: 20px;
+		text-align: start;
+		color: #84939f;
+	}
+	#child2 {
+		width: 50%;
+		height: 100%;
+		/* border:1px solid green; */
+	}
+
+	.profile-picture {
+		border-radius: 100%;
+		overflow: hidden;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+	.profile-picture {
+		border: 3px solid #d9b44a;
+		width: 120px;
+		height: 120px;
+	}
+	.pilotcard {
+		height: 33%;
+		width: 100%;
+		border: 1px solid red;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.pilotcard p {
+		font-size: 10px;
+	}
+	.snip1376 {
+		position: relative;
+		overflow: hidden;
+		margin: 10px;
+		min-height: 500px;
+		min-width: 230px;
+		max-width: 315px;
+		width: 100%;
+		color: #141414;
+		text-align: left;
+		line-height: 1.4em;
+		font-size: 16px;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		margin-bottom: 11%;
+	}
+	.snip1376 * {
+		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	.container2 .box .content h2 {
-		color: #fff;
-		transition: 0.5s;
+	.snip1376 img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.snip1376 figcaption {
+		width: 100%;
+		background-color: #16253d;
+		padding: 15px 25px 65px;
+		position: relative;
+	}
+	.snip1376 figcaption:before {
+		position: absolute;
+		content: "";
+		z-index: 2;
+		bottom: 100%;
+		left: 0;
+		width: 100%;
+		height: 80px;
+		background-image: -webkit-linear-gradient(
+			top,
+			transparent 0%,
+			#ffffff 100%
+		);
+		background-image: linear-gradient(to bottom, transparent 0%, #16253d 100%);
+	}
+	.snip1376 h2,
+	.snip1376 p {
+		margin: 0 0 10px;
+	}
+	.snip1376 h2 {
+		font-weight: 300;
+		font-size: 1.5em;
+		line-height: 1.2em;
 		text-transform: uppercase;
-		margin-bottom: 5px;
-		font-size: 20px;
-		transform: translateY(200px);
-		transition-delay: 0.3s;
+		color: white;
 	}
-	.container2 .box:hover .content h2 {
-		transform: translateY(0px);
+	.snip1376 h3 {
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		color: #d9b44a;
+		margin-bottom: 6px;
 	}
-	.container2 .box .content p {
-		color: #fff;
-		transition: 0.5s;
-		font-size: 14px;
-		transform: translateY(200px);
-		transition-delay: 0.4s;
+	.snip1376 p {
+		font-size: 0.9em;
+		letter-spacing: 1px;
+		opacity: 0.9;
 	}
-	.container2 .box:hover .content p {
-		transform: translateY(0px);
+	.snip1376 .icons {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: #e6e6e6;
+		width: 100%;
+		text-align: center;
 	}
-	/* informations cards */
+	.snip1376 i {
+		padding: 10px 5px;
+		display: inline-block;
+		font-size: 24px;
+		color: #141414;
+		opacity: 0.65;
+	}
+	.snip1376 i:hover {
+		opacity: 1;
+		-webkit-transition: all 0.35s ease;
+		transition: all 0.35s ease;
+	}
+	#faq {
+		min-height: 70vh;
+		background-color: #222222;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+	}
+	.center {
+		width: 87%;
+		align-self: center;
+		margin: auto;
+	}
+
+	details {
+		font-family: "Raleway", sans-serif;
+	}
+
+	summary {
+		transition: background 0.75s ease;
+		width: 100%;
+		outline: 0;
+		text-align: center;
+		font-size: 85%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		border-top: 1px solid #d3d3d3;
+	}
+
+	h2 {
+		color: #1286bc;
+		text-align: left;
+		margin-bottom: 0;
+		padding: 15px;
+		text-shadow: none;
+	}
+
+	details p {
+		padding: 0 25px 15px 25px;
+		margin: 0;
+		text-shadow: none;
+		text-align: justify;
+		line-height: 1.3em;
+	}
+
+	summary::after {
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		content: "\f107";
+		display: inline-block;
+		padding-right: 15px;
+		font-size: 180%;
+		color: #034171;
+	}
+	details[open] summary::after {
+		content: "\f106";
+		display: inline-block;
+		padding-right: 15px;
+		font-size: 180%;
+	}
+
+	details[open] summary:hover {
+		background: none;
+	}
+	summary:hover {
+		background: #d3d3d3;
+	}
+
+	details summary::-webkit-details-marker {
+		display: none;
+	}
 </style>
