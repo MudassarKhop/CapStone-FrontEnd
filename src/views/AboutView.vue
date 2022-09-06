@@ -194,6 +194,54 @@
 				</details>
 			</div>
 		</div>
+		<div class="content">
+			<div class="center">
+				<details>
+					<summary>
+						<h2>Question #1</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+				<details>
+					<summary>
+						<h2>Question #2</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+				<details open>
+					<summary>
+						<h2>Question #3</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+				<details>
+					<summary>
+						<h2>Question #4</h2>
+					</summary>
+					<p>
+						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
+						atqui gubergren. Aperiri appareat reprehendunt an cum, ullum dicta
+						debet has te. Has posse doming scribentur ex, qui ea rebum soleat.
+						Vel aeterno aperiri in.
+					</p>
+				</details>
+			</div>
+		</div>
 	</section>
 </template>
 <style scoped>
@@ -421,13 +469,16 @@
 		min-height: 70vh;
 		background-color: #222222;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-content: center;
 	}
+	.content {
+		width: 50%;
+	}
 	.center {
-		width: 87%;
+		width: 90%;
 		align-self: center;
 		margin: auto;
 	}

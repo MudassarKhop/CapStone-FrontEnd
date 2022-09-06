@@ -107,7 +107,7 @@
 							</li>
 							<li>
 								<i class="fa-solid fa-chevron-right"></i>
-								<router-link to=""> Pilot's Reviews</router-link>
+								<router-link to="/about/#pilots"> Pilots</router-link>
 							</li>
 						</ul>
 					</div>
