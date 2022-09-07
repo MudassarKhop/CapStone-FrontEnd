@@ -1,4 +1,5 @@
 <template>
+	<Nav />
 	<section id="login">
 		<div class="mother">
 			<div class="child1">
@@ -17,7 +18,10 @@
 	</section>
 </template>
 <script>
-	export default {};
+	import Nav from "@/components/nav.vue";
+	export default {
+		components: { Nav },
+	};
 </script>
 <style scoped>
 	#login {

@@ -1,4 +1,5 @@
 <template>
+	<Nav />
 	<section id="about">
 		<div class="display-Flights">
 			<flightcards
@@ -51,9 +52,10 @@
 	</section>
 </template>
 <script>
+	import Nav from "@/components/nav.vue";
 	import flightcards from "@/components/flightcard.vue";
 	export default {
-		components: { flightcards },
+		components: { flightcards, Nav },
 		mounted() {
 			this.$store.dispatch("getFlights");
 			// fetch("https://joint-ecom.herokuapp.com/products")

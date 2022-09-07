@@ -1,4 +1,5 @@
 <template>
+	<Nav />
 	<section id="home"></section>
 	<section id="testimonialsec">
 		<div id="stuuf">
@@ -166,7 +167,12 @@
 	</section>
 </template>
 
-<script></script>
+<script>
+	import Nav from "@/components/nav.vue";
+	export default {
+		components: { Nav },
+	};
+</script>
 <style scoped>
 	* {
 		letter-spacing: 1px;

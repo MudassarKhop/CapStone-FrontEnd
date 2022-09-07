@@ -1,8 +1,10 @@
 <template>
+	<Nav />
 	<section id="contact"></section>
 </template>
 <script>
-	export default {};
+	import Nav from "@/components/nav.vue";
+	export default { components: { Nav } };
 </script>
 <style scoped>
 	#contact {
