@@ -1,9 +1,11 @@
 <template>
 	<router-view />
+	<Footer />
 </template>
 <script>
+	import Footer from "./components/footer.vue";
 	export default {
-		components: {},
+		components: { Footer },
 	};
 </script>
 <style>

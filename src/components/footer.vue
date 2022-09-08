@@ -97,7 +97,7 @@
 							</li>
 							<li>
 								<i class="fa-solid fa-chevron-right"></i>
-								<router-link to=""> FAQs</router-link>
+								<router-link to="/dashboard"> FAQs</router-link>
 							</li>
 							<li>
 								<i class="fa-solid fa-chevron-right"></i>

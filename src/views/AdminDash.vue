@@ -135,7 +135,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div id="middle2">
+					<div id="middle2">
 						<div id="cards">
 							<div id="heading" style="text-align: start">
 								<h1>
@@ -148,7 +148,7 @@
 								<h1>21 TOTAL FLIGHTS</h1>
 							</div>
 						</div>
-					</div> -->
+					</div>
 					<div id="middle3">
 						<div id="cards">
 							<div id="heading" style="text-align: start">
@@ -165,10 +165,6 @@
 								<div id="social">
 									<i class="fa-brands fa-twitter"></i>
 									<h1><i class="fa-solid fa-user"></i> 1M</h1>
-								</div>
-								<div id="social">
-									<i class="fa-brands fa-tiktok"></i>
-									<h1><i class="fa-solid fa-user"></i> 8.5M</h1>
 								</div>
 								<div id="social">
 									<i class="fa-brands fa-facebook"></i>
@@ -336,24 +332,24 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 23px;
+		gap: 10px;
 	}
 	#middle1 {
-		width: 49%;
+		width: 462px;
 		height: 100%;
 		background-color: #2b2c4b;
 		border-radius: 12px;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
-	/* #middle2 {
+	#middle2 {
 		width: 220px;
 		height: 100%;
 		background-color: #2b2c4b;
 		border-radius: 12px;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	} */
+	}
 	#middle3 {
-		width: 49%;
+		width: 462px;
 		height: 100%;
 		background-color: #2b2c4b;
 		border-radius: 12px;
@@ -673,7 +669,7 @@
 	}
 
 	.bar-graph-horizontal {
-		min-width: 500px;
+		min-width: 350px;
 	}
 
 	.bar-graph-horizontal > div {
