@@ -77,6 +77,86 @@ export default createStore({
 					context.dispatch("getFlights", flight.flight_id);
 				});
 		},
+		addFlight: async (context, payload) => {
+			await fetch("https://capstone-api-mudassar.herokuapp.com/flights/", {
+				// await fetch("http://localhost:3000/cars", {
+				method: "POST",
+				body: JSON.stringify(payload),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+					"x-auth-jwt": context.state.jwt,
+				},
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					// console.log(data);
+					context.state.msg = data.msg;
+					context.dispatch("getFlights");
+				});
+		},
+		// login: async (context, payload) => {
+		// 	await fetch(heroku + "/users", {
+		// 		// await fetch("http://localhost:3000/users", {
+		// 		method: "PATCH",
+		// 		body: JSON.stringify(payload),
+		// 		headers: {
+		// 			"Content-type": "application/json; charset=UTF-8",
+		// 			"x-auth-jwt": context.state.jwt,
+		// 		},
+		// 	})
+		// 		.then((res) => res.json())
+		// 		.then((data) => {
+		// 			// console.log(data);
+		// 			if (data.msg === "Login Successful") {
+		// 				context.state.msg = data.msg;
+		// 				context.commit("setUser", data.user);
+		// 				context.commit("setjwt", data.jwt);
+		// 				context.dispatch("setAdmin");
+		// 			} else {
+		// 				context.state.msg = data.msg;
+		// 				setTimeout(() => {
+		// 					context.state.msg = null;
+		// 				}, 3000);
+		// 			}
+		// 		});
+		// },
+		login: async (context, payload) => {
+			let res = await fetch(
+				`https://capstone-api-mudassar.herokuapp.com/passengers/login`,
+				{
+					method: "POST",
+					mode: "no-cors",
+					body: JSON.stringify({
+						pemail: payload.pemail,
+						password: payload.password,
+					}),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			);
+
+			let data = await res.json();
+			console.log(data);
+			if (data.jwt) {
+				context.commit("setJwt", data.jwt);
+				// Verify jwt
+				fetch("https://capstone-api-mudassar.herokuapp.com/passengers/verify", {
+					headers: {
+						"Content-Type": "application/json",
+						"x-auth-token": data.jwt,
+					},
+				})
+					.then((res) => res.json())
+					.then((user) => {
+						context.commit("setUser", user);
+						console.log(user);
+						context.dispatch("getPost", user);
+					});
+			} else {
+				alert("User not found");
+			}
+		},
 	},
 	modules: {},
 });

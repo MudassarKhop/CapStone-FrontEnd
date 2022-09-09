@@ -3,9 +3,58 @@
 	<section id="login">
 		<div class="mother">
 			<div class="child1">
-				<div class="heading">
-					<h1><i class="fa-solid fa-plane-up"></i> Login</h1>
-				</div>
+				<form
+					style="margin: auto"
+					@submit.prevent="login"
+					class="text-light border border-dark p-5 rounded-5 w-75"
+				>
+					<h2 class="display-3 fw-bolder text-center mb-4">Admin Login</h2>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label"
+							>Email address</label
+						>
+						<input
+							v-model="pemail"
+							type="email"
+							class="form-control"
+							id="exampleInputEmail1"
+							aria-describedby="emailHelp"
+							placeholder="Enter Email"
+							required
+						/>
+
+						<div v-if="msg === 'email not found'" class="text-center m-5">
+							<h2>{{ msg }}</h2>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label"
+							>Password</label
+						>
+						<input
+							v-model="password"
+							type="password"
+							class="form-control"
+							placeholder="Enter Password"
+							required
+						/>
+						<div v-if="msg === 'Password Incorrect'" class="text-center m-5">
+							<h2>{{ msg }}</h2>
+						</div>
+					</div>
+					<div class="reg">
+						<router-link to="/register">
+							Don't have an account? Register Here
+						</router-link>
+					</div>
+
+					<button
+						type="submit"
+						class="btn d-flex justify-content-center mx-auto w-100"
+					>
+						Submit
+					</button>
+				</form>
 			</div>
 			<div class="child2">
 				<div class="icons">
@@ -21,6 +70,26 @@
 	import Nav from "@/components/nav.vue";
 	export default {
 		components: { Nav },
+		computed: {
+			user() {
+				return this.$store.state.user;
+			},
+		},
+
+		data() {
+			return {
+				pemail: "",
+				password: "",
+			};
+		},
+		methods: {
+			login() {
+				this.$store.dispatch("login", {
+					pemail: this.pemail,
+					password: this.password,
+				});
+			},
+		},
 	};
 </script>
 <style scoped>

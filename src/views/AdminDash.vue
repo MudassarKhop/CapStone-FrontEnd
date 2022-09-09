@@ -307,7 +307,7 @@
 							aria-labelledby="exampleModalToggleLabel"
 							tabindex="-1"
 						>
-							<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-dialog modal-dialog-centered modal-md">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5
@@ -324,7 +324,198 @@
 										></button>
 									</div>
 									<div class="modal-body">
-										Show a second modal and hide this one with the button below.
+										<div id="adduser">
+											<div id="adduser1">
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Flight ID :</label
+												>
+												<input
+													id="adduseri"
+													v-model="flight_id"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Flight Date :</label
+												>
+												<input
+													id="adduseri"
+													v-model="flight_date"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>From Destination :</label
+												>
+												<input
+													id="adduseri"
+													v-model="from_destination"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>FDA :</label
+												>
+												<input
+													id="adduseri"
+													v-model="fda"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>To Destination :</label
+												>
+												<input
+													id="adduseri"
+													v-model="to_destination"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>TDA :</label
+												>
+												<input
+													id="adduseri"
+													v-model="tda"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Jet ID :</label
+												>
+												<input
+													id="adduseri"
+													v-model="jet_id"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Duration :</label
+												>
+												<input
+													id="adduseri"
+													v-model="duration"
+													type="text"
+													class="form-control"
+												/>
+											</div>
+											<div id="adduser2">
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>IMG 1 :</label
+												>
+												<input
+													id="adduseri"
+													v-model="img1"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>IMG 2 :</label
+												>
+												<input
+													id="adduseri"
+													v-model="img2"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>IMG 3 :</label
+												>
+												<input
+													id="adduseri"
+													v-model="img3"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>IMG 4 :</label
+												>
+												<input
+													id="adduseri"
+													v-model="img4"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Boarding :</label
+												>
+												<input
+													id="adduseri"
+													v-model="boarding"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Departure :</label
+												>
+												<input
+													id="adduseri"
+													v-model="departure"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>QR :</label
+												>
+												<input
+													id="adduseri"
+													v-model="qr"
+													type="text"
+													class="form-control"
+												/>
+												<label
+													style="text-align: start"
+													class="form-label text-light"
+													>Information :</label
+												>
+												<input
+													id="adduseri"
+													v-model="info"
+													type="text"
+													class="form-control"
+												/>
+											</div>
+											<div id="addbtn">
+												<button
+													type="button"
+													@click="addProd"
+													class="btn"
+													data-bs-dismiss="modal"
+												>
+													ADD PRODUCT
+												</button>
+											</div>
+										</div>
 									</div>
 									<div class="modal-footer"></div>
 								</div>
@@ -401,7 +592,6 @@
 												<tr>
 													<td data-label="Delete">
 														<a
-															href="/"
 															class="btn"
 															@click="
 																this.$store.dispatch(
@@ -454,36 +644,7 @@
 							<h1><i class="fa-solid fa-trash"></i> DELETE</h1>
 							<p>delete a flight</p>
 						</button>
-						<div
-							class="modal fade"
-							id="exampleModalToggle4"
-							aria-hidden="true"
-							aria-labelledby="exampleModalToggleLabel"
-							tabindex="-1"
-						>
-							<div class="modal-dialog modal-dialog-centered">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5
-											class="modal-title text-light"
-											id="exampleModalToggleLabel"
-										>
-											<i class="fa-solid fa-user"></i> ADD USER
-										</h5>
-										<button
-											type="button"
-											class="btn-close"
-											data-bs-dismiss="modal"
-											aria-label="Close"
-										></button>
-									</div>
-									<div class="modal-body">
-										Show a second modal and hide this one with the button below.
-									</div>
-									<div class="modal-footer"></div>
-								</div>
-							</div>
-						</div>
+
 						<button
 							id="btn"
 							class="btn"
@@ -491,8 +652,10 @@
 							href="#exampleModalToggle4"
 							role="button"
 						>
-							<h1><i class="fa-solid fa-user"></i> ADD USER</h1>
-							<p>grant access to someone else</p>
+							<router-link style="text-decoration: none" to="/">
+								<h1><i class="fa-solid fa-user"></i> Live Link</h1>
+								<p>go back to your website</p>
+							</router-link>
 						</button>
 					</div>
 				</div>
@@ -640,6 +803,27 @@
 				return this.$store.state.flights;
 				//Returning the current state of the store
 				//Must have when looping through properties
+			},
+		},
+		methods: {
+			addProd() {
+				const payload = {
+					flight_id: this.flight_id,
+					flight_date: this.flight_date,
+					from_destination: this.from_destination,
+					fda: this.fda,
+					to_destination: this.to_destination,
+					tda: this.tda,
+					jet_id: this.jet_id,
+					img1: this.img1,
+					img2: this.img2,
+					img3: this.img3,
+					img4: this.img4,
+					boarding: this.boarding,
+					departure: this.departure,
+					qr: this.qr,
+				};
+				this.$store.dispatch("addFlight", payload);
 			},
 		},
 	};
@@ -1418,5 +1602,30 @@
 		border: none;
 		min-width: 100px;
 		color: white;
+	}
+	#adduser {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* border: 1px solid red; */
+	}
+	#adduser1 {
+		height: 70%;
+		width: 50%;
+		/* border: 1px solid red; */
+	}
+	#adduser2 {
+		height: 70%;
+		width: 50%;
+		/* border: 1px solid red; */
+	}
+	#adduseri {
+		background-color: #02022e;
+		border-radius: 12px;
+		border: 3px solid #621e9b;
+		margin-bottom: 10px;
+		height: 40px;
 	}
 </style>
