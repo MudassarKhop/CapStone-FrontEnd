@@ -93,16 +93,404 @@
 			<div id="mainpanel">
 				<div id="top">
 					<div id="buttons">
-						<button id="btn" class="btn">
+						<div
+							class="modal fade"
+							id="exampleModalToggle2"
+							aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel2"
+							tabindex="-1"
+						>
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5
+											class="modal-title text-light"
+											id="exampleModalToggleLabel2"
+										>
+											<i class="fa-solid fa-pencil"></i> EDIT
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<table>
+											<thead>
+												<tr>
+													<th scope="col"><u>SAVE CHANGES</u></th>
+													<th scope="col"><u>Flight ID</u></th>
+													<th scope="col"><u>Flight Date</u></th>
+													<th scope="col"><u>From Destination</u></th>
+													<th scope="col"><u>FDA</u></th>
+													<th scope="col"><u>To Destination</u></th>
+													<th scope="col"><u>TDA</u></th>
+													<th scope="col"><u>Jet ID</u></th>
+													<th scope="col"><u>Duration</u></th>
+													<th scope="col"><u>Img1</u></th>
+													<th scope="col"><u>Img2</u></th>
+													<th scope="col"><u>Img3</u></th>
+													<th scope="col"><u>Img4</u></th>
+													<th scope="col"><u>Boarding</u></th>
+													<th scope="col"><u>Departure</u></th>
+													<th scope="col"><u>QR</u></th>
+													<th scope="col"><u>Information</u></th>
+												</tr>
+											</thead>
+											<tbody
+												v-for="flight in flights"
+												:key="flight.id"
+												:flight="flight"
+											>
+												<tr>
+													<td data-label="Edit">
+														<button class="btn">
+															<a
+																@click="
+																	this.$store.dispatch('editFlight', flight)
+																"
+																><i class="fa-solid fa-pencil"></i
+															></a>
+														</button>
+													</td>
+													<td data-label="Flight ID">
+														<input
+															v-model="flight.flight_id"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Flight Date">
+														<input
+															v-model="flight.flight_date"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="From Destination">
+														<input
+															v-model="flight.from_destination"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="FDA">
+														<input
+															v-model="flight.fda"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="To Destination">
+														<input
+															v-model="flight.to_destination"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="TDA">
+														<input
+															v-model="flight.tda"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Jet ID">
+														<input
+															v-model="flight.jet_id"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Duration">
+														<input
+															v-model="flight.duration"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Img1">
+														<input
+															v-model="flight.img1"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Img2">
+														<input
+															v-model="flight.img2"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Img3">
+														<input
+															v-model="flight.img3"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Img4">
+														<input
+															v-model="flight.img4"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Boarding">
+														<input
+															v-model="flight.boarding"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Departure">
+														<input
+															v-model="flight.departure"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="QR">
+														<input
+															v-model="flight.qr"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+													<td data-label="Information">
+														<input
+															v-model="flight.info"
+															type="text"
+															class="form-control"
+															required
+														/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div>
+						<button
+							id="btn"
+							class="btn"
+							data-bs-target="#exampleModalToggle2"
+							data-bs-toggle="modal"
+						>
 							<h1><i class="fa-solid fa-pencil"></i> EDIT</h1>
-							<p>make changes to a flight</p></button
-						><button id="btn" class="btn">
+							<p>make changes to a flight</p>
+						</button>
+						<div
+							class="modal fade"
+							id="exampleModalToggle"
+							aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel"
+							tabindex="-1"
+						>
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5
+											class="modal-title text-light"
+											id="exampleModalToggleLabel"
+										>
+											<i class="fa-solid fa-plus"></i> ADD
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										Show a second modal and hide this one with the button below.
+									</div>
+									<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="modal fade"
+							id="exampleModalToggle2"
+							aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel2"
+							tabindex="-1"
+						></div>
+						<button
+							id="btn"
+							class="btn"
+							data-bs-toggle="modal"
+							href="#exampleModalToggle"
+							role="button"
+						>
 							<h1><i class="fa-solid fa-plus"></i> ADD</h1>
-							<p>add a flight</p></button
-						><button id="btn" class="btn">
+							<p>add a flight</p>
+						</button>
+						<div
+							class="modal fade"
+							id="exampleModalToggle3"
+							aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel"
+							tabindex="-1"
+						>
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5
+											class="modal-title text-light"
+											id="exampleModalToggleLabel"
+										>
+											<i class="fa-solid fa-trash"></i> DELETE
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<table>
+											<thead>
+												<tr>
+													<th scope="col"><u>Delete</u></th>
+													<th scope="col"><u>Flight ID</u></th>
+													<th scope="col"><u>Flight Date</u></th>
+													<th scope="col"><u>From Destination</u></th>
+													<th scope="col"><u>FDA</u></th>
+													<th scope="col"><u>To Destination</u></th>
+													<th scope="col"><u>TDA</u></th>
+													<th scope="col"><u>Jet ID</u></th>
+													<th scope="col"><u>Duration</u></th>
+													<th scope="col"><u>Img1</u></th>
+													<th scope="col"><u>Img2</u></th>
+													<th scope="col"><u>Img3</u></th>
+													<th scope="col"><u>Img4</u></th>
+													<th scope="col"><u>Boarding</u></th>
+													<th scope="col"><u>Departure</u></th>
+													<th scope="col"><u>QR</u></th>
+													<th scope="col"><u>Information</u></th>
+												</tr>
+											</thead>
+											<tbody
+												v-for="flight in flights"
+												:key="flight.id"
+												:flight="flight"
+											>
+												<tr>
+													<td data-label="Delete">
+														<a
+															href="/"
+															class="btn"
+															@click="
+																this.$store.dispatch(
+																	'deleteFlight',
+																	flight.flight_id
+																)
+															"
+														>
+															<i class="fa-solid fa-trash"></i>
+														</a>
+													</td>
+
+													<td data-label="Flight ID">{{ flight.flight_id }}</td>
+													<td data-label="Flight Date">
+														{{ flight.flight_date }}
+													</td>
+													<td data-label="From Destination">
+														{{ flight.from_destination }}
+													</td>
+													<td data-label="FDA">{{ flight.fda }}</td>
+													<td data-label="To Destination">
+														{{ flight.to_destination }}
+													</td>
+													<td data-label="TDA">{{ flight.tda }}</td>
+													<td data-label="Jet ID">{{ flight.jet_id }}</td>
+													<td data-label="Duration">{{ flight.duration }}</td>
+													<td data-label="Img1">{{ flight.img1 }}</td>
+													<td data-label="Img2">{{ flight.img2 }}</td>
+													<td data-label="Img3">{{ flight.img3 }}</td>
+													<td data-label="Img4">{{ flight.img4 }}</td>
+													<td data-label="Boarding">{{ flight.boarding }}</td>
+													<td data-label="Departure">{{ flight.departure }}</td>
+													<td data-label="QR">{{ flight.qr }}</td>
+													<td data-label="Information">{{ flight.info }}</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div>
+						<button
+							id="btn"
+							class="btn"
+							data-bs-toggle="modal"
+							href="#exampleModalToggle3"
+							role="button"
+						>
 							<h1><i class="fa-solid fa-trash"></i> DELETE</h1>
-							<p>delete a flight</p></button
-						><button id="btn" class="btn">
+							<p>delete a flight</p>
+						</button>
+						<div
+							class="modal fade"
+							id="exampleModalToggle4"
+							aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel"
+							tabindex="-1"
+						>
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5
+											class="modal-title text-light"
+											id="exampleModalToggleLabel"
+										>
+											<i class="fa-solid fa-user"></i> ADD USER
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										Show a second modal and hide this one with the button below.
+									</div>
+									<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div>
+						<button
+							id="btn"
+							class="btn"
+							data-bs-toggle="modal"
+							href="#exampleModalToggle4"
+							role="button"
+						>
 							<h1><i class="fa-solid fa-user"></i> ADD USER</h1>
 							<p>grant access to someone else</p>
 						</button>
@@ -998,5 +1386,37 @@
 		margin: auto;
 		width: 58%;
 		/* border: 1px solid red; */
+	}
+	.modal {
+		border: none !important;
+		--bs-modal-border-color: none !important;
+		height: 90% !important;
+		padding: 20px;
+	}
+	.btn-close:hover {
+		color: red !important;
+		text-decoration: none;
+		opacity: 0.75;
+	}
+	.btn-close {
+		color: red !important;
+	}
+	.modal-header {
+		background-color: #2b2c4b;
+		border: none !important;
+	}
+	.modal-body {
+		background-color: #2b2c4b;
+		border: none !important;
+	}
+	.modal-footer {
+		background-color: #2b2c4b;
+		border: none !important;
+	}
+	input {
+		background-color: #2b2c4b;
+		border: none;
+		min-width: 100px;
+		color: white;
 	}
 </style>
