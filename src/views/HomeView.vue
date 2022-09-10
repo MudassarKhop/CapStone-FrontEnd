@@ -11,7 +11,7 @@
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
 							voluptate tempora, ipsum officiis placeat explicabo consequatur.
 							Veritatis voluptatibus voluptatem, pariatur ullam, optio harum sit
-							dolorem ab doloribus atque minima dolorum!
+							dolorem ab doloribus atque minima dolorum! Lorem ipsum dolor sit ur eaque maiores fuga deserunt eius repudiandae cumque a nostrum excepturi aperiam?
 						</p>
 					</div>
 					<div id="divide2">
@@ -247,6 +247,7 @@
 		justify-content: center;
 		align-content: center;
 		padding-right: 10px;
+		padding-top: 10px;
 		padding-left: 10px;
 	}
 	#divide1 h1 {
@@ -263,6 +264,7 @@
 		color: #84939f;
 		text-align: center;
 		letter-spacing: 1px;
+
 	}
 	#divide2 {
 		width: 50%;

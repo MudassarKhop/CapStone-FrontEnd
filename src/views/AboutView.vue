@@ -165,7 +165,7 @@
 			<div class="center">
 				<details>
 					<summary>
-						<h2>Question #1</h2>
+						<h2>Question 1</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -176,7 +176,7 @@
 				</details>
 				<details>
 					<summary>
-						<h2>Question #2</h2>
+						<h2>Question 2</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -187,7 +187,7 @@
 				</details>
 				<details open>
 					<summary>
-						<h2>Question #3</h2>
+						<h2>Question 3</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -198,7 +198,7 @@
 				</details>
 				<details>
 					<summary>
-						<h2>Question #4</h2>
+						<h2>Question 4</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -213,7 +213,7 @@
 			<div class="center">
 				<details>
 					<summary>
-						<h2>Question #1</h2>
+						<h2>Question 5</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -224,7 +224,7 @@
 				</details>
 				<details>
 					<summary>
-						<h2>Question #2</h2>
+						<h2>Question 6</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -235,7 +235,7 @@
 				</details>
 				<details open>
 					<summary>
-						<h2>Question #3</h2>
+						<h2>Question 7</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -246,7 +246,7 @@
 				</details>
 				<details>
 					<summary>
-						<h2>Question #4</h2>
+						<h2>Question 8</h2>
 					</summary>
 					<p>
 						Lorem ipsum dolor sit amet, vocent viderer tamquam his ad, mei ut
@@ -515,7 +515,7 @@
     align-items: center;
 	}
 	.center {
-		width: 90%;
+		width: 100%;
 		align-self: center;
 		margin: auto;
 	}
@@ -534,11 +534,11 @@
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
-		border-top: 1px solid #d3d3d3;
+		border-top: 1px solid #d9b44a;
 	}
 
 	h2 {
-		color: #1286bc;
+		color: white;
 		text-align: left;
 		margin-bottom: 0;
 		padding: 15px;
@@ -551,6 +551,8 @@
 		text-shadow: none;
 		text-align: justify;
 		line-height: 1.3em;
+		color: #84939f;
+		font-size: 20px;
 	}
 
 	summary::after {
@@ -560,7 +562,7 @@
 		display: inline-block;
 		padding-right: 15px;
 		font-size: 180%;
-		color: #034171;
+		color: #717f8d;
 	}
 	details[open] summary::after {
 		content: "\f106";
@@ -573,7 +575,7 @@
 		background: none;
 	}
 	summary:hover {
-		background: #d3d3d3;
+		background: #d9b44a;
 	}
 
 	details summary::-webkit-details-marker {
