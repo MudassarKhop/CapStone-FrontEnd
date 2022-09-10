@@ -154,10 +154,10 @@
 	#footer {
 		min-height: 40vh;
 		background-color: #16253d;
+		border-top: 1px solid #d9b44a;
 		width: 100%;
 	}
 	#footer2 {
-		border-top: 1px solid #d9b44a;
 		min-height: 40vh;
 		background-color: #16253d;
 		display: flex;

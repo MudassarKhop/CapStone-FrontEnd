@@ -25,10 +25,10 @@ const routes = [
 		},
 	},
 	{
-		path: "/jets",
-		name: "jets",
+		path: "/login",
+		name: "login",
 		component: function () {
-			return import(/* webpackChunkName: "about" */ "../views/JetsView.vue");
+			return import(/* webpackChunkName: "about" */ "../views/Login.vue");
 		},
 	},
 	{

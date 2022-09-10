@@ -315,8 +315,7 @@ Boarding Pass
 		display: block;
 	}
 	.boarding-pass header {
-		background: -webkit-linear-gradient(top, #36475f, #2c394f);
-		background: linear-gradient(to bottom, #36475f, #2c394f);
+		background: #16253d;
 		padding: 12px 20px;
 		height: 53px;
 	}

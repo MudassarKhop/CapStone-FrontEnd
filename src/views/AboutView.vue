@@ -1,5 +1,4 @@
 <template>
-	<Nav />
 	<section id="about">
 		<div class="mother">
 			<div id="child1">
@@ -31,8 +30,8 @@
 				</div>
 			</div>
 			<div id="child2">
-				<img
-					style="width: 750px; height: 380px; margin-top: 10%"
+				<img class="img img-fluid"
+					style="min-width: 750px; min-height: 380px; margin-top: 10%"
 					src="https://i.postimg.cc/yYPVfD5B/kindpng-2430888.png"
 					alt=""
 				/>
@@ -83,8 +82,9 @@
 		</div>
 	</section>
 	<section id="pilots">
-		<div class="mother">
-			<div id="child2">
+		<div class="mother1
+		">
+			<div id="child22">
 				<div id="info2">
 					<figure class="snip1376">
 						<img
@@ -136,6 +136,20 @@
 						<figcaption>
 							<h2>Karen Denvers</h2>
 							<h3>commanding officer</h3>
+							<p>
+								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
+								What's misunderstood about you? Calvin:
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="snip1376 hover">
+						<img
+							src="https://i.postimg.cc/N0nfc7tv/148381359-273268490822856-6776074874453332688-n.jpg"
+							alt="sample47"
+						/>
+						<figcaption>
+							<h2>Karen Denvers</h2>
+							<h3>floor officer</h3>
 							<p>
 								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
 								What's misunderstood about you? Calvin:
@@ -246,10 +260,7 @@
 	</section>
 </template>
 <script>
-	import Nav from "@/components/nav.vue";
-	export default {
-		components: { Nav },
-	};
+
 </script>
 <style scoped>
 	* {
@@ -259,7 +270,8 @@
 	}
 	#about {
 		background-color: #222222;
-		height: 80vh;
+		min-height: 100vh;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -268,7 +280,9 @@
 	}
 	#pilots {
 		background-color: #222222;
-		height: 80vh;
+		padding: 20px;
+		min-height: 60vh;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -276,12 +290,22 @@
 		align-content: center;
 	}
 	.mother {
-		width: 90%;
-		height: 80%;
+		min-width: 90%;
+		min-height: 80%;
 		/* border: 1px solid red; */
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	.mother1 {
+		min-width: 90%;
+		min-height: 80%;
+		/* border: 1px solid red; */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
 		justify-content: center;
 		align-content: center;
 	}
@@ -329,12 +353,11 @@
 		width: 90%;
 	}
 	#info2 {
-		height: 100%;
+		gap: 20px;
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 		width: 100%;
 		/* border: 1px solid purple; */
 	}
@@ -355,6 +378,11 @@
 	}
 	#child2 {
 		width: 50%;
+		height: 100%;
+		/* border:1px solid green; */
+	}
+	#child22 {
+		width: 100%;
 		height: 100%;
 		/* border:1px solid green; */
 	}
@@ -385,9 +413,7 @@
 	.snip1376 {
 		position: relative;
 		overflow: hidden;
-		margin: 10px;
 		min-height: 500px;
-		min-width: 230px;
 		max-width: 315px;
 		width: 100%;
 		color: #141414;
@@ -397,7 +423,6 @@
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-		margin-bottom: 11%;
 	}
 	.snip1376 * {
 		-webkit-box-sizing: border-box;
@@ -473,7 +498,8 @@
 		transition: all 0.35s ease;
 	}
 	#faq {
-		min-height: 70vh;
+		padding: 50px;
+		min-height: 50vh;
 		background-color: #222222;
 		display: flex;
 		flex-direction: row;
@@ -483,6 +509,10 @@
 	}
 	.content {
 		width: 50%;
+		display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 	}
 	.center {
 		width: 90%;
@@ -548,5 +578,51 @@
 
 	details summary::-webkit-details-marker {
 		display: none;
+	}
+	@media only screen and (max-width: 1515px) {
+		.mother{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+		}
+		.mother1{
+
+			width: 100%;
+		}
+		#info2{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-items: center;
+			align-items: center;
+			width: 100%;
+		}
+		#child1{
+			width: 100%;
+
+		}
+		#child22{
+			width: 100%;
+			justify-items: center;
+			align-items: center;
+		}
+		#faq{
+			display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		}
+	.content{
+		width: 100%;
+	}
+	#child2{
+		display: none;
+	}
+	#child1{
+		margin-bottom: 30px;
+	}
 	}
 </style>

@@ -1,5 +1,4 @@
 <template>
-	<Nav />
 	<section id="login">
 		<div class="mother">
 			<div class="child1">
@@ -67,9 +66,7 @@
 	</section>
 </template>
 <script>
-	import Nav from "@/components/nav.vue";
 	export default {
-		components: { Nav },
 		computed: {
 			user() {
 				return this.$store.state.user;

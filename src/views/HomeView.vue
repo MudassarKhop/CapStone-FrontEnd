@@ -1,5 +1,4 @@
 <template>
-	<Nav />
 	<section id="home"></section>
 	<section id="testimonialsec">
 		<div id="stuuf">
@@ -168,10 +167,6 @@
 </template>
 
 <script>
-	import Nav from "@/components/nav.vue";
-	export default {
-		components: { Nav },
-	};
 </script>
 <style scoped>
 	* {
@@ -186,7 +181,7 @@
 	}
 	#testimonialsec {
 		background-color: #222222;
-		height: 100vh;
+		min-height: 100vh;
 		border-bottom: 1px solid #d9b44a;
 		display: flex;
 		flex-direction: row;
@@ -231,7 +226,7 @@
 			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	}
 	#card2 {
-		height: 100%;
+		min-height: 100%;
 		width: 20%;
 		background-color: #16253d;
 		position: relative;
@@ -245,7 +240,7 @@
 
 	#divide1 {
 		width: 50%;
-		height: 100%;
+		min-height: 100%;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -322,7 +317,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
-		height: 100%;
+		min-height: 100%;
 		width: 20%;
 		background-color: #16253d;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -389,7 +384,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		min-height: 60vh;
+		min-height: 80vh;
 		background-color: #222222;
 	}
 	.container2 {
@@ -405,8 +400,8 @@
 	}
 	.container2 .box {
 		/* position: relative; */
-		width: 255px;
-		height: 255px;
+		min-width: 325px;
+		min-height: 325px;
 		background: #000;
 		transition: 0.5s;
 		transform-style: preserve-3d;
@@ -493,4 +488,73 @@
 		transform: translateY(0px);
 	}
 	/* informations cards */
+	@media only screen and (max-width: 1315px) {
+		#card1{
+			display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	min-width: 20%;
+		}
+		#card2{
+			display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	min-width: 70%;
+		}
+		#divide1{
+			min-height: 500px;
+			min-width:100%;
+			
+		}
+		#divide1 p{
+			padding: 20px;
+			text-align: center;
+		}
+		#divide2{
+			min-height: 50%;
+			min-width:100%;
+		}
+		#stuuf{
+			min-height: 100%;
+		}
+.stuff1{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	}
+	.stuff2{
+		display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	}
+	#divide4{
+		min-height: 500px;
+			min-width:100%;
+	}
+	#card11{
+			display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	min-width: 70%;
+		}
+		#card11 h1{
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+		}
+		#card11 p{
+			padding: 50px;
+		}
+		#card22{
+			display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	min-width: 70%;
+		}
+		.container2{
+			gap: 10px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
 </style>
