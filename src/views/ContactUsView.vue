@@ -1,15 +1,11 @@
 <template>
 	<section id="contact">
-		<div id="contactform">
-			<div id="picture">
-				<img src="https://i.postimg.cc/dVfrWf18/alex-azabache-Gg3-STn-Ntym-E-unsplash.jpg" alt="">
-			</div>
-			<div id="form"><form
+			<div id="form">
+				<form
   action="https://formspree.io/f/xeqdenlz"
   method="POST"
 >
 <div id="heading">
-
 	<h1>Contact <span>Us</span></h1>
 							<p>Send us a message with your question.</p>
 </div>
@@ -43,7 +39,7 @@
   <!-- your other form fields go here -->
   <button class="btn text-light" type="submit">Send</button>
 </form></div>
-		</div>
+
 	</section>
 </template>
 <script>
@@ -58,44 +54,21 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
-		align-content: center;
-	}
-	#contactform{
-		width: 90%;
-		min-height: 90%;
-		background-color: #222c1d;
-		border-radius: 12px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-content: center;
-		
-
+		align-items: center;
 	}
 	#form{
-width: 50%;
-height: 100%;
-border-top: 1px solid #d9b44a;
-		border-right: 1px solid #d9b44a;
-		border-bottom: 1px solid #d9b44a;
-		border-top: 1px solid #d9b44a;
+width: 500px;
+padding: 50px;
+border-radius: 12px;
+background-color: #222c1d;
+height: 90%;
+border: 1px solid #d9b44a;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
 justify-content: center;
 align-items: center;
 /* border: 1px solid red; */
-	}
-	#picture{
-width: 50%;
-height: 100%;
-/* border: 1px solid red; */
-
-	}
-	#picture img{
-		width: 100%;
-		height: 100%;
 	}
 	.group {
 		position: relative;
@@ -215,8 +188,8 @@ height: 100%;
 			background: transparent;
 		}
 	}
-	@media only screen and (max-width: 1612px) {
-		#contactform{
+	@media only screen and (max-width: 800px) {
+		/* #contactform{
     flex-direction: column;
 	width: 120%;
     min-height: 90vh;
@@ -225,26 +198,21 @@ height: 100%;
 min-width: 100%;
 min-height: 50%;
 		}
-		#picture img{
+		#picture img{ */
 
+			#form{
+				padding: 30px;
+				min-width: 100%;
+				min-height: 50%;
+			}
+			form{
+				padding: 20px;
+				min-height: 50%;
+			}
+			.btn{
+				margin-top: 0;
+			}
 		}
-		#form{
-			border-left:1px solid #d9b44a ;
-			border-top: none;
-			width: 100%;
-			min-height: 50%;
-		}
-		#contact{
-		padding-top: 0;
-padding: 30px;
-		}
-		form{
-			padding: 30px;
-			min-height: 50%;
-		}
-		.btn{
-			margin-top: 0;
-		}
-	}
+	
 
 </style>

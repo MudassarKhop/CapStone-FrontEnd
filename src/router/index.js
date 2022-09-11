@@ -69,6 +69,20 @@ const routes = [
 			return import(/* webpackChunkName: "about" */ "../views/AdminDash.vue");
 		},
 	},
+	{
+		path: "/dashboard2",
+		name: "dashboard2",
+		component: function () {
+			return import(/* webpackChunkName: "about" */ "../views/AdminDash2.vue");
+		},
+	},
+	{
+		path: "/register",
+		name: "register",
+		component: function () {
+			return import(/* webpackChunkName: "about" */ "../views/Register.vue");
+		},
+	},
 ];
 
 const router = createRouter({

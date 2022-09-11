@@ -51,7 +51,7 @@
 												letter-spacing: 1px;
 											"
 										>
-											Oxford-Airlines™
+										Oxford-Airlines™
 										</p>
 									</div>
 									<div style="width: 30%; text-align: end; margin-top: 10px">
@@ -117,175 +117,84 @@
 										></button>
 									</div>
 									<div class="modal-body">
-										<table>
-											<thead>
-												<tr>
-													<th scope="col"><u>SAVE CHANGES</u></th>
-													<th scope="col"><u>Flight ID</u></th>
-													<th scope="col"><u>Flight Date</u></th>
-													<th scope="col"><u>From Destination</u></th>
-													<th scope="col"><u>FDA</u></th>
-													<th scope="col"><u>To Destination</u></th>
-													<th scope="col"><u>TDA</u></th>
-													<th scope="col"><u>Jet ID</u></th>
-													<th scope="col"><u>Duration</u></th>
-													<th scope="col"><u>Img1</u></th>
-													<th scope="col"><u>Img2</u></th>
-													<th scope="col"><u>Img3</u></th>
-													<th scope="col"><u>Img4</u></th>
-													<th scope="col"><u>Boarding</u></th>
-													<th scope="col"><u>Departure</u></th>
-													<th scope="col"><u>QR</u></th>
-													<th scope="col"><u>Information</u></th>
-												</tr>
-											</thead>
-											<tbody
-												v-for="flight in flights"
-												:key="flight.id"
-												:flight="flight"
-											>
-												<tr>
-													<td data-label="Edit">
+                                        <table>
+							<thead>
+								<tr>
+                                    <th scope="col">SAVE CHANGES</th>
+									<th scope="col">Passenger ID</th>
+									<th scope="col">Passenger Name</th>
+									<th scope="col">Passenger Surname</th>
+									<th scope="col">Passenger Email</th>
+									<th scope="col">Passenger Password</th>
+									<th scope="col">Passenger Password</th>
+									<th scope="col">Passenger Role</th>
+								</tr>
+							</thead>
+							<tbody
+								v-for="passenger in passengers"
+								:key="passenger.id"
+								:passenger="passenger"
+							>
+								<tr>
+                                    <td data-label="Edit">
 														<button class="btn">
 															<a
 																@click="
-																	this.$store.dispatch('editFlight', flight)
+																	this.$store.dispatch('editPassenger', passenger)
 																"
 																><i class="fa-solid fa-pencil"></i
 															></a>
 														</button>
 													</td>
-													<td data-label="Flight ID">
-														<input
-															v-model="flight.flight_id"
+									<td data-label="Passenger ID"><input
+															v-model="passenger.passenger_id"
+															type="text"
+															class="form-control"
+															required
+														/></td>
+									<td data-label="Passenger Name"><input
+															v-model="passenger.pname"
+															type="text"
+															class="form-control"
+															required
+														/></td>
+									<td data-label="Passenger Surname">
+										<input
+															v-model="passenger.psurname"
 															type="text"
 															class="form-control"
 															required
 														/>
-													</td>
-													<td data-label="Flight Date">
-														<input
-															v-model="flight.flight_date"
+									</td>
+									<td data-label="Passenger Email"><input
+															v-model="passenger.pemail"
+															type="text"
+															class="form-control"
+															required
+														/></td>
+									<td data-label="Passenger Password">
+										<input
+															v-model="passenger.password"
 															type="text"
 															class="form-control"
 															required
 														/>
-													</td>
-													<td data-label="From Destination">
-														<input
-															v-model="flight.from_destination"
+									</td>
+									<td data-label="Phone Number"><input
+															v-model="passenger.pcell"
 															type="text"
 															class="form-control"
 															required
-														/>
-													</td>
-													<td data-label="FDA">
-														<input
-															v-model="flight.fda"
+														/></td>
+									<td data-label="Passenger Role"><input
+															v-model="passenger.prole"
 															type="text"
 															class="form-control"
 															required
-														/>
-													</td>
-													<td data-label="To Destination">
-														<input
-															v-model="flight.to_destination"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="TDA">
-														<input
-															v-model="flight.tda"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Jet ID">
-														<input
-															v-model="flight.jet_id"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Duration">
-														<input
-															v-model="flight.duration"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Img1">
-														<input
-															v-model="flight.img1"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Img2">
-														<input
-															v-model="flight.img2"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Img3">
-														<input
-															v-model="flight.img3"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Img4">
-														<input
-															v-model="flight.img4"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Boarding">
-														<input
-															v-model="flight.boarding"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Departure">
-														<input
-															v-model="flight.departure"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="QR">
-														<input
-															v-model="flight.qr"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-													<td data-label="Information">
-														<input
-															v-model="flight.info"
-															type="text"
-															class="form-control"
-															required
-														/>
-													</td>
-												</tr>
-											</tbody>
-										</table>
+														/></td>
+								</tr>
+							</tbody>
+						</table>
 									</div>
 									<div class="modal-footer"></div>
 								</div>
@@ -298,7 +207,7 @@
 							data-bs-toggle="modal"
 						>
 							<h1><i class="fa-solid fa-pencil"></i> EDIT</h1>
-							<p>make changes to a flight</p>
+							<p>make changes to a user</p>
 						</button>
 						<div
 							class="modal fade"
@@ -535,8 +444,8 @@
 							href="#exampleModalToggle"
 							role="button"
 						>
-							<h1><i class="fa-solid fa-plus"></i> ADD</h1>
-							<p>add a flight</p>
+							<h1><i class="fa-solid fa-plus"></i> Register</h1>
+							<p>register a user</p>
 						</button>
 						<div
 							class="modal fade"
@@ -562,73 +471,52 @@
 										></button>
 									</div>
 									<div class="modal-body">
-										<table>
-											<thead>
-												<tr>
-													<th scope="col"><u>Delete</u></th>
-													<th scope="col"><u>Flight ID</u></th>
-													<th scope="col"><u>Flight Date</u></th>
-													<th scope="col"><u>From Destination</u></th>
-													<th scope="col"><u>FDA</u></th>
-													<th scope="col"><u>To Destination</u></th>
-													<th scope="col"><u>TDA</u></th>
-													<th scope="col"><u>Jet ID</u></th>
-													<th scope="col"><u>Duration</u></th>
-													<th scope="col"><u>Img1</u></th>
-													<th scope="col"><u>Img2</u></th>
-													<th scope="col"><u>Img3</u></th>
-													<th scope="col"><u>Img4</u></th>
-													<th scope="col"><u>Boarding</u></th>
-													<th scope="col"><u>Departure</u></th>
-													<th scope="col"><u>QR</u></th>
-													<th scope="col"><u>Information</u></th>
-												</tr>
-											</thead>
-											<tbody
-												v-for="flight in flights"
-												:key="flight.id"
-												:flight="flight"
-											>
-												<tr>
-													<td data-label="Delete">
+                                        <table>
+							<thead>
+								<tr>
+                                    <th scope="col"><u>Delete</u></th>
+									<th scope="col">Passenger ID</th>
+									<th scope="col">Passenger Name</th>
+									<th scope="col">Passenger Surname</th>
+									<th scope="col">Passenger Email</th>
+									<th scope="col">Passenger Password</th>
+									<th scope="col">Passenger Password</th>
+									<th scope="col">Passenger Role</th>
+								</tr>
+							</thead>
+							<tbody
+								v-for="passenger in passengers"
+								:key="passenger.id"
+								:passenger="passenger"
+							>
+								<tr>
+                                    <td data-label="Delete">
 														<a
 															class="btn"
 															@click="
 																this.$store.dispatch(
-																	'deleteFlight',
-																	flight.flight_id
+																	'deletePassenger',
+																	passenger.passenger_id
 																)
 															"
 														>
 															<i class="fa-solid fa-trash"></i>
 														</a>
 													</td>
-
-													<td data-label="Flight ID">{{ flight.flight_id }}</td>
-													<td data-label="Flight Date">
-														{{ flight.flight_date }}
-													</td>
-													<td data-label="From Destination">
-														{{ flight.from_destination }}
-													</td>
-													<td data-label="FDA">{{ flight.fda }}</td>
-													<td data-label="To Destination">
-														{{ flight.to_destination }}
-													</td>
-													<td data-label="TDA">{{ flight.tda }}</td>
-													<td data-label="Jet ID">{{ flight.jet_id }}</td>
-													<td data-label="Duration">{{ flight.duration }}</td>
-													<td data-label="Img1">{{ flight.img1 }}</td>
-													<td data-label="Img2">{{ flight.img2 }}</td>
-													<td data-label="Img3">{{ flight.img3 }}</td>
-													<td data-label="Img4">{{ flight.img4 }}</td>
-													<td data-label="Boarding">{{ flight.boarding }}</td>
-													<td data-label="Departure">{{ flight.departure }}</td>
-													<td data-label="QR">{{ flight.qr }}</td>
-													<td data-label="Information">{{ flight.info }}</td>
-												</tr>
-											</tbody>
-										</table>
+									<td data-label="Passenger ID">{{ passenger.passenger_id }}</td>
+									<td data-label="Passenger Name">{{ passenger.pname }}</td>
+									<td data-label="Passenger Surname">
+										{{ passenger.psurname }}
+									</td>
+									<td data-label="Passenger Email">{{ passenger.pemail }}</td>
+									<td data-label="Passenger Password">
+										{{ passenger.password }}
+									</td>
+									<td data-label="Phone Number">{{ passenger.pcell }}</td>
+									<td data-label="Passenger Role">{{ passenger.prole }}</td>
+								</tr>
+							</tbody>
+						</table>
 									</div>
 									<div class="modal-footer"></div>
 								</div>
@@ -652,9 +540,9 @@
 							href="#exampleModalToggle4"
 							role="button"
 						>
-							<router-link style="text-decoration: none" to="/dashboard2">
-								<h1><i class="fa-solid fa-user"></i> Passengers</h1>
-								<p>view passengers database</p>
+							<router-link style="text-decoration: none" to="/dashboard">
+								<h1><i class="fa-solid fa-user"></i> Flights Databases</h1>
+								<p>view flights database.</p>
 							</router-link>
 						</button>
 					</div>
@@ -667,50 +555,32 @@
 						<table>
 							<thead>
 								<tr>
-									<th scope="col">Flight ID</th>
-									<th scope="col">Flight Date</th>
-									<th scope="col">From Destination</th>
-									<th scope="col">FDA</th>
-									<th scope="col">To Destination</th>
-									<th scope="col">TDA</th>
-									<th scope="col">Jet ID</th>
-									<th scope="col">Duration</th>
-									<th scope="col">Img1</th>
-									<th scope="col">Img2</th>
-									<th scope="col">Img3</th>
-									<th scope="col">Img4</th>
-									<th scope="col">Boarding</th>
-									<th scope="col">Departure</th>
-									<th scope="col">QR</th>
-									<th scope="col">Information</th>
+									<th scope="col">Passenger ID</th>
+									<th scope="col">Passenger Name</th>
+									<th scope="col">Passenger Surname</th>
+									<th scope="col">Passenger Email</th>
+									<th scope="col">Passenger Password</th>
+									<th scope="col">Passenger Password</th>
+									<th scope="col">Passenger Role</th>
 								</tr>
 							</thead>
 							<tbody
-								v-for="flight in flights"
-								:key="flight.id"
-								:flight="flight"
+								v-for="passenger in passengers"
+								:key="passenger.id"
+								:passenger="passenger"
 							>
 								<tr>
-									<td data-label="Flight ID">{{ flight.flight_id }}</td>
-									<td data-label="Flight Date">{{ flight.flight_date }}</td>
-									<td data-label="From Destination">
-										{{ flight.from_destination }}
+									<td data-label="Passenger ID">{{ passenger.passenger_id }}</td>
+									<td data-label="Passenger Name">{{ passenger.pname }}</td>
+									<td data-label="Passenger Surname">
+										{{ passenger.psurname }}
 									</td>
-									<td data-label="FDA">{{ flight.fda }}</td>
-									<td data-label="To Destination">
-										{{ flight.to_destination }}
+									<td data-label="Passenger Email">{{ passenger.pemail }}</td>
+									<td data-label="Passenger Password">
+										{{ passenger.password }}
 									</td>
-									<td data-label="TDA">{{ flight.tda }}</td>
-									<td data-label="Jet ID">{{ flight.jet_id }}</td>
-									<td data-label="Duration">{{ flight.duration }}</td>
-									<td data-label="Img1">{{ flight.img1 }}</td>
-									<td data-label="Img2">{{ flight.img2 }}</td>
-									<td data-label="Img3">{{ flight.img3 }}</td>
-									<td data-label="Img4">{{ flight.img4 }}</td>
-									<td data-label="Boarding">{{ flight.boarding }}</td>
-									<td data-label="Departure">{{ flight.departure }}</td>
-									<td data-label="QR">{{ flight.qr }}</td>
-									<td data-label="Information">{{ flight.info }}</td>
+									<td data-label="Phone Number">{{ passenger.pcell }}</td>
+									<td data-label="Passenger Role">{{ passenger.prole }}</td>
 								</tr>
 							</tbody>
 						</table>
@@ -723,38 +593,19 @@
 <script>
 	export default {
 		mounted() {
-			this.$store.dispatch("getFlights");
+			this.$store.dispatch("getPassengers");
 			// fetch("https://joint-ecom.herokuapp.com/products")
 			//   .then((res) => res.json())
 			//   .then((data) => (this.products = data));
 		},
 		computed: {
-			flights() {
-				return this.$store.state.flights;
+			passengers() {
+				return this.$store.state.passengers;
 				//Returning the current state of the store
 				//Must have when looping through properties
 			},
 		},
 		methods: {
-			addProd() {
-				const payload = {
-					flight_id: this.flight_id,
-					flight_date: this.flight_date,
-					from_destination: this.from_destination,
-					fda: this.fda,
-					to_destination: this.to_destination,
-					tda: this.tda,
-					jet_id: this.jet_id,
-					img1: this.img1,
-					img2: this.img2,
-					img3: this.img3,
-					img4: this.img4,
-					boarding: this.boarding,
-					departure: this.departure,
-					qr: this.qr,
-				};
-				this.$store.dispatch("addFlight", payload);
-			},
 		},
 	};
 </script>

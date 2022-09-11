@@ -37,6 +37,13 @@
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="#">
+			<router-link to="/register">Register</router-link>
+
+        </a>
+        </li>
+		
+		<li class="nav-item">
+          <a class="nav-link" href="#">
 			<router-link to="/contactus">Contact Us</router-link>
 
         </a>
@@ -72,7 +79,7 @@
 		letter-spacing: 1px;
 	}
 	.collapse {
-  padding-left: 16%;
+  padding-left: 11%;
 }
 .fa-cart-shopping{
 	color: #d9b44a;

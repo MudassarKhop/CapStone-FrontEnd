@@ -4,6 +4,8 @@ export default createStore({
 	state: {
 		flight: null,
 		flights: null,
+		passenger:null,
+		passengers:null,
 		jet: null,
 		jets: null,
 		asc: true,
@@ -19,6 +21,12 @@ export default createStore({
 		},
 		setFlights: (state, flights) => {
 			state.flights = flights;
+		},
+		setPassenger: (state, passenger) => {
+			state.passenger = passenger;
+		},
+		setPassengers: (state, passengers) => {
+			state.passengers = passengers;
 		},
 		setJet: (state, jet) => {
 			state.jet = jet;
@@ -156,6 +164,55 @@ export default createStore({
 			} else {
 				alert("User not found");
 			}
+		},
+		getPassenger: async (context, id) => {
+			fetch("https://capstone-api-mudassar.herokuapp.com/passengers/" + id, {
+				// mode: "no-cors",
+			})
+				.then((res) => res.json())
+				.then((json) => context.commit("setPassenger", json))
+				.catch((err) => console.log(err.message));
+		},
+		getPassengers: async (context) => {
+			fetch(
+				"https://capstone-api-mudassar.herokuapp.com/passengers"
+				// , {
+				// 	mode: "no-cors",
+				// }
+			)
+				.then((response) => response.json())
+				.then((json) => context.commit("setPassengers", json));
+		},
+		deletePassenger: async (context, id) => {
+			await fetch("https://capstone-api-mudassar.herokuapp.com/passengers/" + id, {
+				// await fetch("http://localhost:3000/cars/" + id, {
+				method: "DELETE",
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					// console.log(data);
+					context.dispatch("getPassengers");
+				});
+		},
+		editPassenger: async (context, passenger) => {
+			console.log(passenger);
+			await fetch(
+				"https://capstone-api-mudassar.herokuapp.com/passengers/" +
+					passenger.passenger_id,
+				{
+					method: "PUT",
+					body: JSON.stringify(passenger),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			)
+				.then((res) => res.json())
+				.then((data) => {
+					// console.log(data);
+					context.state.msg = data.msg;
+					context.dispatch("getPassengers", passenger.passenger_id);
+				});
 		},
 	},
 	modules: {},

@@ -92,7 +92,7 @@
 							alt="sample17"
 						/>
 						<figcaption>
-							<h2>Leana Paul</h2>
+							<h2>Sean Paul</h2>
 							<h3>chief captain</h3>
 							<p>
 								I'm looking for something that can deliver a 50-pound payload of
@@ -120,7 +120,7 @@
 							alt="sample47"
 						/>
 						<figcaption>
-							<h2>Riley Reid</h2>
+							<h2>Riley Martin</h2>
 							<h3>co-pilot</h3>
 							<p>
 								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
@@ -148,7 +148,7 @@
 							alt="sample47"
 						/>
 						<figcaption>
-							<h2>Karen Denvers</h2>
+							<h2>Carol Sanders</h2>
 							<h3>floor officer</h3>
 							<p>
 								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
@@ -276,7 +276,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-content: center;
+		align-content: center;                                         
 	}
 	#pilots {
 		background-color: #222222;

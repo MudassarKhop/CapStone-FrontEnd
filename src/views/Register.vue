@@ -1,12 +1,28 @@
 <template>
 	<section id="contact">
 			<div id="form">
-				<form>
+				<form
+  action="https://formspree.io/f/xeqdenlz"
+  method="POST"
+>
 <div id="heading">
-	<h1>Sign <span>In</span></h1>
-							<p>Login to view your details.</p>
+	<h1>Register With <span>Us</span></h1>
+							<p>sign up to unlock member perks only.</p>
 </div>
 <div id="inputts">
+
+	<div class="group">
+		<input type="text" name="fullname" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Name</label>
+	</div>
+    <div class="group">
+		<input type="text" name="fullname" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Surname</label>
+	</div>
 	<div class="group">
 		<input type="text" name="email" required />
 		<span class="highlight"></span>
@@ -14,17 +30,24 @@
 		<label>Email</label>
 	</div>
 	<div class="group">
-		<input type="text" name="password" required />
+		<input type="text" name="phone number" required />
 		<span class="highlight"></span>
 		<span class="bar"></span>
 		<label>Password</label>
 	</div>
+	<div class="group">
+		<input type="text" name="message" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Phone Number</label>
+	</div>
 </div>
   <!-- your other form fields go here -->
   <button class="btn text-light" type="submit">Send</button>
-
 </form>
-<router-link style="margin-top:20px;" to="/register">dont have an account? click here to register</router-link></div>
+<router-link style="margin-top:20px;" to="/login">already have an account? sign in.</router-link></div>
+
+
 
 	</section>
 </template>
@@ -202,3 +225,4 @@ min-height: 50%;
 	
 
 </style>
+
