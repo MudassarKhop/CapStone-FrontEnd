@@ -51,8 +51,9 @@
 <style scoped>
 	#contact {
 		background-color: #222222;
-		height: 90vh;
-		padding-top: 4%;
+		min-height: 80vh;
+		/* padding-top: 4%; */
+
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -60,8 +61,8 @@
 		align-content: center;
 	}
 	#contactform{
-		width: 80%;
-		height: 90%;
+		width: 90%;
+		min-height: 90%;
 		background-color: #16253d;
 		border-radius: 12px;
 		display: flex;
@@ -217,15 +218,32 @@ height: 100%;
 	@media only screen and (max-width: 1612px) {
 		#contactform{
     flex-direction: column;
-	width: 50%;
-    min-height: 100%;
+	width: 120%;
+    min-height: 90vh;
 		}
 		#picture{
-width: 70%;
+min-width: 100%;
+min-height: 50%;
+		}
+		#picture img{
+
 		}
 		#form{
+			border-left:1px solid #d9b44a ;
+			border-top: none;
 			width: 100%;
-			height: 70%;
+			min-height: 50%;
+		}
+		#contact{
+		padding-top: 0;
+padding: 30px;
+		}
+		form{
+			padding: 30px;
+			min-height: 50%;
+		}
+		.btn{
+			margin-top: 0;
 		}
 	}
 
