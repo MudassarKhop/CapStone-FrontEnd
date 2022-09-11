@@ -103,7 +103,7 @@
 	.mother {
 		min-width: 60%;
 		height: 80vh;
-		background-color: #223655;
+		background-color: #222c1d;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;

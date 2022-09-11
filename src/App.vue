@@ -22,6 +22,6 @@
 		font-family:Verdana, Geneva, Tahoma, sans-serif;
 	}
 	h1{
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: Von;
 	}
 </style>

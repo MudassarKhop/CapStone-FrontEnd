@@ -270,7 +270,7 @@
 	}
 	#about {
 		background-color: #222222;
-		min-height: 100vh;
+		min-height: 90vh;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -434,7 +434,7 @@
 	}
 	.snip1376 figcaption {
 		width: 100%;
-		background-color: #16253d;
+		background-color: black;
 		padding: 15px 25px 65px;
 		position: relative;
 	}
@@ -451,7 +451,7 @@
 			transparent 0%,
 			#ffffff 100%
 		);
-		background-image: linear-gradient(to bottom, transparent 0%, #16253d 100%);
+		background-image: linear-gradient(to bottom, transparent 0%, black 100%);
 	}
 	.snip1376 h2,
 	.snip1376 p {

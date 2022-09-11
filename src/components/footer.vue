@@ -116,24 +116,24 @@
 			<div class="line"></div>
 			<div id="boxes">
 				<div class="h1box">
-					<h1>Development</h1>
+					<h1>Where To Fly</h1>
 				</div>
 				<div class="content">
 					<div class="paragraph">
-						<p>Contact our admin to start working on our website.</p>
+						<p>
+							Travel to your location of choice in style with our private jets.
+						</p>
 					</div>
-					<div style="margin-top: 10px" id="ul">
+					<div style="margin-top:10px" id="ul">
 						<ul>
-							<li>
-								<router-link to="/admin"
-									><button id="admin" class="btn">
-										Admin Login
-									</button></router-link
-								>
-							</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Singapore</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Bali</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Qatar</li>
+							<li><i class="fa-solid fa-chevron-right"></i> Hong-Kong</li>
 						</ul>
 					</div>
 				</div>
+			
 			</div>
 			<div class="line"></div>
 		</div>
@@ -153,13 +153,13 @@
 <style scoped>
 	#footer {
 		min-height: 40vh;
-		background-color: #16253d;
+		background-color: #222c1d;
 		border-top: 1px solid #d9b44a;
 		width: 100%;
 	}
 	#footer2 {
 		min-height: 40vh;
-		background-color: #16253d;
+		background-color: #222c1d;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -174,6 +174,7 @@
 		flex-wrap: nowrap;
 		justify-items: center;
 		align-items: center;
+		background-color: #222c1d;
 	}
 	.gap {
 		width: 60px;
@@ -428,8 +429,8 @@
 	}
 	#footer3 {
 		height: 5vh;
-		background-color: #223655;
-		padding: 10px;
+		background-color: black;
+		padding-top: 10px;
 	}
 	.copyright {
 		display: flex;
@@ -439,8 +440,9 @@
 		align-content: center;
 	}
 	.copyright h1 {
+		padding-top: 10px;
 		letter-spacing: 1px;
-		font-size: 10px;
+		font-size: 15px;
 		color: white;
 		margin: 0;
 	}
@@ -453,7 +455,7 @@
 		border: 1px solid #d9b44a;
 		background-color: #c69c29;
 		color: white;
-		text-shadow: 1px 1px black;
+		text-shadow: 1px 1px #222c1d;
 		letter-spacing: 1px;
 		transition: 0.2s ease;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 5px,

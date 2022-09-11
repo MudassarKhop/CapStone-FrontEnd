@@ -142,7 +142,7 @@
 	}
 
 	#splash {
-		background: #16253d;
+		background: #222c1d;
 		background-repeat: repeat-y;
 		position: fixed;
 		left: 0;

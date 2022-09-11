@@ -63,7 +63,7 @@
 	#contactform{
 		width: 90%;
 		min-height: 90%;
-		background-color: #16253d;
+		background-color: #222c1d;
 		border-radius: 12px;
 		display: flex;
 		flex-direction: row;

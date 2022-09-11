@@ -1,58 +1,67 @@
 <template>
 	<!-- Navbar -->
-	<nav id="nav" class="navbar navbar-expand-lg">
-		<button
-			class="navbar-toggler"
-			type="button"
-			data-bs-toggle="collapse"
-			data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent"
-			aria-expanded="false"
-			aria-label="Toggle navigation"
-		>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="container d-flex justify-content-center">
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center mb-3">
-					<router-link to="/" id="navbar-brand" class="navbar-brand"
+	<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <router-link to="/" id="navbar-brand" class="navbar-brand"
 						><i class="fa-solid fa-plane-up"></i> OXFORD-AIRLINES</router-link
 					>
-				</div>
-				<div class="col-12 d-flex justify-content-center">
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav align-items-center mx-auto">
-							<li class="nav-item">
-								<router-link to="/">Home</router-link>
-							</li>
-							<li class="nav-item">
-								<router-link to="/about">About</router-link>
-							</li>
-							<li class="nav-item">
-								<router-link to="/flights">Flights</router-link>
-							</li>
-							<li class="nav-item">
-								<router-link to="/login">Login</router-link>
-							</li>
-							<li class="nav-item">
-								<router-link to="/contactus">Contact Us</router-link>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 300px;">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/">Home</router-link>
+
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/about">About</router-link>
+
+        </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/flights">Flights</router-link>
+
+        </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/login">Login</router-link>
+
+        </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/contactus">Contact Us</router-link>
+
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 </template>
 <script>
-	export default {};
 </script>
 <style scoped>
+		@font-face {
+		font-family: Von;
+		src: url("../assets/Vonique\ 92_D.otf");
+	}
 	* {
 		letter-spacing: 1px;
 	}
+	.collapse {
+  padding-left: 15%;
+}
 	.navbar {
-		background-color: #16253d;
+		background-color: black;
 		border-bottom: 1px solid #d9b44a;
 		min-height: 8vh;
 	}
@@ -75,12 +84,16 @@
 		color: #d9b44a;
 	}
 	a {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		padding-left: 10px;
 		color: white;
 		transition: 0.3s ease-in;
 		text-decoration: none;
 	}
 	#navbar-brand {
+		margin-top: 15px;
+		font-size: 30px;
+		font-family: Von;
 		color: white;
 	}
 	#navbar-brand:hover {
@@ -100,8 +113,13 @@
 	}
 
 	@media only screen and (max-width: 996px) {
-		#list {
-			margin-left: 0;
-		}
+		.collapse {
+  padding-left: 0;
+}
 	}
+	@media only screen and (min-width: 1247px)
+{.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+}}
 </style>

@@ -1,5 +1,12 @@
 <template>
-	<section id="home"></section>
+	<section id="home">
+<img class="img img-fluid" src="https://i.postimg.cc/FR8GPYmX/kindpng-2237032.png" alt="">
+<div id="inline">
+	<h1>THE FUTURE OF <span>LUXURY TRAVEL</span></h1>
+	<p>est.2022</p>
+	<div class="icons"><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i> </div>
+</div>
+	</section>
 	<section id="testimonialsec">
 		<div id="stuuf">
 			<div class="stuff1">
@@ -167,18 +174,125 @@
 </template>
 
 <script>
-</script>
+export default {
+		
+	methods:{}
+	};
+	
+	</script>
 <style scoped>
+	@font-face {
+		font-family: Aven;
+		src: url("../assets/AvenueX-Regular.otf");
+	}
+	@font-face {
+		font-family: Lux;
+		src: url("../assets/AguafinaScript-Regular.ttf");
+	}
+	@font-face {
+		font-family: Von;
+		src: url("../assets/Vonique\ 92_D.otf");
+	}
+	.icons{
+		margin-top: 20px;
+	}
+	.fa-instagram {
+		font-size: 40px;
+		display: inline-block;
+		color: #fff;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		border-radius: 50%;
+		text-align: center;
+		width: 45px;
+		transition: 0.3s;
+	}
+	.fa-facebook {
+		font-size: 40px;
+		display: inline-block;
+		color: #fff;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		border-radius: 50%;
+		text-align: center;
+		width: 45px;
+		transition: 0.3s;
+	}
+	.fa-twitter {
+		font-size: 40px;
+		display: inline-block;
+		color: #fff;
+		line-height: 1;
+		padding: 8px 0;
+		margin-right: 4px;
+		border-radius: 50%;
+		text-align: center;
+		width: 45px;
+		transition: 0.3s;
+	}
+	.fa-facebook-f:hover {
+		background: #4867aa;
+		color: #ffffff;
+	}
+	.fa-twitter:hover {
+		background-color: #1da1f2;
+	}
+	.fa-instagram:hover {
+		background: radial-gradient(
+			circle at 33% 100%,
+			#fed373 4%,
+			#f15245 30%,
+			#d92e7f 62%,
+			#9b36b7 85%,
+			#515ecf
+		);
+	}
 	* {
 		letter-spacing: 1px;
 		padding: 0;
 		margin: 0;
 	}
 	#home {
-		background-color: #222222;
+		background-color: black;
+		/* background-image: url("https://i.postimg.cc/GtmXMjPS/ezgif-com-gif-maker.gif"); */
+		background-size: cover;
 		height: 92vh;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		color: white;
 		/* information section */
 	}
+	span{
+
+		color: #d9b44a;
+	}
+	#home img{
+		width: 90%;
+		height: 50%;
+		/* aspect-ratio: 1;
+		background-size: cover; */
+	}
+#home h1{
+	margin-top: 20px;
+		font-family: Von;
+		letter-spacing: 2px;
+		font-size: 50px;
+	}
+	#testimonialsec:before {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+}
 	#testimonialsec {
 		background-color: #222222;
 		min-height: 100vh;
@@ -220,7 +334,7 @@
 		align-content: center;
 		height: 100%;
 		width: 70%;
-		background-color: #16253d;
+		background-color: black;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -228,7 +342,7 @@
 	#card2 {
 		min-height: 100%;
 		width: 20%;
-		background-color: #16253d;
+		background-color: black;
 		position: relative;
 		text-align: center;
 		color: white;
@@ -321,7 +435,7 @@
 		align-content: center;
 		min-height: 100%;
 		width: 20%;
-		background-color: #16253d;
+		background-color: black;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -386,7 +500,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		min-height: 80vh;
+		min-height: 60vh;
 		background-color: #222222;
 	}
 	.container2 {
@@ -438,7 +552,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(180deg, #16253d, #000);
+		background: linear-gradient(180deg, black, #000);
 		z-index: 1;
 		opacity: 0;
 		transition: 0.5s;

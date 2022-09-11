@@ -125,7 +125,7 @@ export default createStore({
 				`https://capstone-api-mudassar.herokuapp.com/passengers/login`,
 				{
 					method: "POST",
-					mode: "no-cors",
+					// mode: "no-cors",
 					body: JSON.stringify({
 						pemail: payload.pemail,
 						password: payload.password,
