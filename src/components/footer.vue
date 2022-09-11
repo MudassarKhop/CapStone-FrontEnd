@@ -484,7 +484,12 @@
 			align-items: center;
 		}
 		#footer3 {
+			height: 10vh;
 			width: 100%;
+		}
+		#footer3 h1{
+			font-size: 11px;
+			padding-top:10px ;
 		}
 		.gap {
 			display: none;

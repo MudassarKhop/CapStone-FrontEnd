@@ -72,7 +72,7 @@
 		letter-spacing: 1px;
 	}
 	.collapse {
-  padding-left: 15%;
+  padding-left: 16%;
 }
 .fa-cart-shopping{
 	color: #d9b44a;

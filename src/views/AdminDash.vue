@@ -659,76 +659,6 @@
 						</button>
 					</div>
 				</div>
-				<div id="holder">
-					<div id="middle1">
-						<div id="cards">
-							<div id="heading" style="text-align: start">
-								<h1>
-									<i class="fa-solid fa-arrow-pointer"></i>
-									WEB - INTERACTION
-								</h1>
-							</div>
-							<div id="bargraph">
-								<section class="bar-graph bar-graph-horizontal bar-graph-one">
-									<div class="bar-one">
-										<div class="year">2021</div>
-										<div class="bar" data-percentage="49.6%"></div>
-									</div>
-									<div class="bar-two">
-										<div class="year">2022</div>
-										<div class="bar" data-percentage="71%"></div>
-									</div>
-								</section>
-								<h5 style="text-shadow: 1px 1px 2px black">
-									<i class="fa-solid fa-chart-line"></i> INCREASE IN WEBSITE
-									VISITS
-								</h5>
-							</div>
-						</div>
-					</div>
-					<div id="middle2">
-						<div id="cards">
-							<div id="heading" style="text-align: start">
-								<h1>
-									<i class="fa-sharp fa-solid fa-plane-departure"></i> TOTAL
-									FLIGHTS
-								</h1>
-							</div>
-							<div id="flightno">
-								<i class="fa-solid fa-plane-up"></i>
-								<h1>21 TOTAL FLIGHTS</h1>
-							</div>
-						</div>
-					</div>
-					<div id="middle3">
-						<div id="cards">
-							<div id="heading" style="text-align: start">
-								<h1>
-									<i class="fa-solid fa-mobile-screen"></i> SOCIAL - MEDIA
-									FOLLOWERS
-								</h1>
-							</div>
-							<div id="sociali">
-								<div id="social">
-									<i class="fa-brands fa-instagram"></i>
-									<h1><i class="fa-solid fa-user"></i> 2.7M</h1>
-								</div>
-								<div id="social">
-									<i class="fa-brands fa-twitter"></i>
-									<h1><i class="fa-solid fa-user"></i> 1M</h1>
-								</div>
-								<div id="social">
-									<i class="fa-brands fa-facebook"></i>
-									<h1><i class="fa-solid fa-user"></i> 3.2M</h1>
-								</div>
-								<div id="social">
-									<i class="fa-brands fa-linkedin"></i>
-									<h1><i class="fa-solid fa-user"></i> 200K</h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div id="table">
 					<div id="heading2">
 						<h1><i class="fa-solid fa-database"></i> DATABASE</h1>
@@ -929,7 +859,7 @@
 	}
 	#table {
 		width: 100%;
-		height: 47%;
+		height: 78%;
 		background-color: #2b2c4b;
 		border-radius: 12px;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -952,6 +882,7 @@
 		height: 75%;
 		width: 75%;
 		margin: auto;
+		aspect-ratio: 1;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	#name {
@@ -998,7 +929,7 @@
 		text-align: start;
 		display: flex;
 		flex-direction: column;
-		padding: 10px;
+		padding: 25px;
 		transition: 0.4s ease;
 	}
 	#btn:hover {
@@ -1321,7 +1252,7 @@
 	/*  */
 	/* table */
 	#heading2 {
-		height: 14%;
+		height: 10%;
 		width: 100%;
 		padding-top: 10px;
 		padding-left: 15px;
@@ -1344,10 +1275,9 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
-		align-content: center;
-		height: 280px;
+		align-items: center;
+		height: 85%;
 		width: 100%;
-		padding: 10px;
 		/* border: 1px solid red; */
 	}
 	table {
@@ -1358,7 +1288,7 @@
 		border-collapse: collapse;
 		margin: 0;
 		padding: 0;
-		height: 89%;
+		height: 100%;
 		width: 99%;
 		border-radius: 12px;
 		display: block;
@@ -1388,7 +1318,6 @@
 	}
 	tr {
 		background-color: #02022e;
-		border: 3px solid #621e9b;
 		color: white;
 		/* border: 1px solid #ddd; */
 		padding: 0.35em;

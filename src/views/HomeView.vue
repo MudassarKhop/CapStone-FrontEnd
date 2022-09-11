@@ -356,9 +356,9 @@ export default {
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-content: center;
-		padding-right: 60px;
-		padding-top: 10px;
-		padding-left: 60px;
+		padding-right: 10px;
+		padding-top: 30px;
+		padding-left: 10px;
 	}
 	#divide1 h1 {
 		color: white;
@@ -603,6 +603,13 @@ export default {
 	}
 	/* informations cards */
 	@media only screen and (max-width: 1315px) {
+		#home img{
+			display:none;
+		}
+		#home h1{
+			text-align: center;
+			font-size: 40px;
+		}
 		#card1{
 			display: flex;
     flex-direction: column;
