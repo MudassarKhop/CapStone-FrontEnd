@@ -205,7 +205,8 @@ export default {
 		margin-right: 4px;
 		border-radius: 50%;
 		text-align: center;
-		width: 45px;
+		height: 60px;
+		width: 60px;
 		transition: 0.3s;
 	}
 	.fa-facebook {
@@ -217,7 +218,8 @@ export default {
 		margin-right: 4px;
 		border-radius: 50%;
 		text-align: center;
-		width: 45px;
+		height: 55px;
+		width: 55px;
 		transition: 0.3s;
 	}
 	.fa-twitter {
@@ -229,25 +231,19 @@ export default {
 		margin-right: 4px;
 		border-radius: 50%;
 		text-align: center;
-		width: 45px;
+		height: 55px;
+		width: 55px;
 		transition: 0.3s;
 	}
-	.fa-facebook-f:hover {
-		background: #4867aa;
-		color: #ffffff;
+	.fa-facebook:hover {
+	
+		color:#d9b44a;
 	}
 	.fa-twitter:hover {
-		background-color: #1da1f2;
+		color: #d9b44a;
 	}
 	.fa-instagram:hover {
-		background: radial-gradient(
-			circle at 33% 100%,
-			#fed373 4%,
-			#f15245 30%,
-			#d92e7f 62%,
-			#9b36b7 85%,
-			#515ecf
-		);
+		color:#d9b44a;
 	}
 	* {
 		letter-spacing: 1px;
@@ -360,9 +356,9 @@ export default {
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-content: center;
-		padding-right: 10px;
+		padding-right: 60px;
 		padding-top: 10px;
-		padding-left: 10px;
+		padding-left: 60px;
 	}
 	#divide1 h1 {
 		color: white;
@@ -582,6 +578,7 @@ export default {
 		box-sizing: border-box;
 	}
 	.container2 .box .content h2 {
+		font-family: Von;
 		color: #fff;
 		transition: 0.5s;
 		text-transform: uppercase;
@@ -594,6 +591,7 @@ export default {
 		transform: translateY(0px);
 	}
 	.container2 .box .content p {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		color: #fff;
 		transition: 0.5s;
 		font-size: 14px;

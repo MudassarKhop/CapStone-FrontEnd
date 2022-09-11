@@ -42,6 +42,20 @@
         </a>
         </li>
       </ul>
+	<div id="cart">
+		<li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/profile"><i class="fa-solid fa-user"></i></router-link>
+
+        </a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">
+			<router-link to="/cart"><i class="fa-solid fa-cart-shopping"></i></router-link>
+
+        </a>
+        </li>
+	</div>
     </div>
   </div>
 </nav>
@@ -59,6 +73,37 @@
 	}
 	.collapse {
   padding-left: 15%;
+}
+.fa-cart-shopping{
+	color: #d9b44a;
+	transition: 0.2s ease;
+}
+.fa-user{
+	color: #d9b44a;
+	transition: 0.2s ease;
+}
+.fa-cart-shopping:hover{
+	color: white;
+	transition: 0.2s ease;
+}
+.fa-user:hover{
+	color: white;
+	transition: 0.2s ease;
+}
+#cart {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	color:#d9b44a ;
+}
+#cart li{
+	list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		justify-items: start;
+		align-items: flex-start;
+		margin: 0;
+		padding: 0;
 }
 	.navbar {
 		background-color: black;

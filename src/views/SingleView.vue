@@ -155,7 +155,7 @@
 </script>
 <style scoped>
 	#about {
-		background-color: white;
+		background-color: #222222;
 		padding: 50px;
 		height: 85vh;
 		display: flex;
@@ -169,7 +169,7 @@
 		text-shadow: 1px 1px 2px black;
 	}
 	#card {
-		background: linear-gradient(to bottom, #36475f, #2c394f);
+		background: #222c1d;
 		width: 60%;
 		height: 98%;
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -276,8 +276,7 @@
 		display: block;
 	}
 	.boarding-pass header {
-		background: -webkit-linear-gradient(top, #36475f, #2c394f);
-		background: linear-gradient(to bottom, #36475f, #2c394f);
+		background: #222c1d;
 		padding: 12px 20px;
 		height: 53px;
 		border-top-right-radius: 12px;

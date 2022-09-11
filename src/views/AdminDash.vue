@@ -904,28 +904,28 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 10px;
+		gap: 50px;
+		background-color: #2b2c4b;
+		border-radius: 12px;
+
 	}
 	#middle1 {
-		width: 462px;
+		width: 31%;
 		height: 100%;
-		background-color: #2b2c4b;
+		/* border: 1px solid red; */
 		border-radius: 12px;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	#middle2 {
-		width: 220px;
+		width: 31%;
 		height: 100%;
-		background-color: #2b2c4b;
+		/* border: 1px solid red; */
 		border-radius: 12px;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	#middle3 {
-		width: 462px;
+		width: 31%;
 		height: 100%;
-		background-color: #2b2c4b;
+		/* border: 1px solid red; */
 		border-radius: 12px;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	#table {
 		width: 100%;
