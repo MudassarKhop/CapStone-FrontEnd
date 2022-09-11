@@ -82,19 +82,19 @@
   padding-left: 11%;
 }
 .fa-cart-shopping{
-	color: #d9b44a;
+	color: white;
 	transition: 0.2s ease;
 }
 .fa-user{
-	color: #d9b44a;
+	color: white;
 	transition: 0.2s ease;
 }
 .fa-cart-shopping:hover{
-	color: white;
+	color: #d9b44a;
 	transition: 0.2s ease;
 }
 .fa-user:hover{
-	color: white;
+	color: #d9b44a;
 	transition: 0.2s ease;
 }
 #cart {
