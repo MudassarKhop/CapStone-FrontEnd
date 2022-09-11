@@ -1,11 +1,232 @@
 <template>
-	<section id="contact"></section>
+	<section id="contact">
+		<div id="contactform">
+			<div id="picture">
+				<img src="https://i.postimg.cc/dVfrWf18/alex-azabache-Gg3-STn-Ntym-E-unsplash.jpg" alt="">
+			</div>
+			<div id="form"><form
+  action="https://formspree.io/f/xeqdenlz"
+  method="POST"
+>
+<div id="heading">
+
+	<h1>Contact <span>Us</span></h1>
+							<p>Send us a message with your question.</p>
+</div>
+<div id="inputts">
+
+	<div class="group">
+		<input type="text" name="fullname" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Full Name</label>
+	</div>
+	<div class="group">
+		<input type="text" name="email" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Email</label>
+	</div>
+	<div class="group">
+		<input type="text" name="phone number" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Phone Number</label>
+	</div>
+	<div class="group">
+		<input type="text" name="message" required />
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Message</label>
+	</div>
+</div>
+  <!-- your other form fields go here -->
+  <button class="btn text-light" type="submit">Send</button>
+</form></div>
+		</div>
+	</section>
 </template>
 <script>
 </script>
 <style scoped>
 	#contact {
 		background-color: #222222;
-		height: 100vh;
+		height: 90vh;
+		padding-top: 4%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
 	}
+	#contactform{
+		width: 80%;
+		height: 90%;
+		background-color: #16253d;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		
+
+	}
+	#form{
+width: 50%;
+height: 100%;
+border-top: 1px solid #d9b44a;
+		border-right: 1px solid #d9b44a;
+		border-bottom: 1px solid #d9b44a;
+		border-top: 1px solid #d9b44a;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+/* border: 1px solid red; */
+	}
+	#picture{
+width: 50%;
+height: 100%;
+/* border: 1px solid red; */
+
+	}
+	#picture img{
+		width: 100%;
+		height: 100%;
+	}
+	.group {
+		position: relative;
+		margin-bottom: 25px;
+	}
+	#heading{
+		margin-bottom: 30px;
+	}
+	#heading h1{
+		color: white;
+	}
+	#heading p{
+		color: white;
+	}
+	span{
+		color: #d9b44a;
+	}
+	input {
+		font-size: 18px;
+		padding: 10px 10px 10px 5px;
+		display: block;
+		width: 300px;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid #757575;
+		color: white;
+	}
+	.btn{
+		margin-top: 30px;
+		width: 200px;
+		border: 1px solid #d9b44a;
+	}
+	input:focus {
+		outline: none;
+	}
+	/* LABEL ======================================= */
+	label {
+		color: #999;
+		font-size: 18px;
+		font-weight: normal;
+		position: absolute;
+		pointer-events: none;
+		left: 5px;
+		top: 10px;
+		transition: 0.2s ease all;
+		-moz-transition: 0.2s ease all;
+		-webkit-transition: 0.2s ease all;
+	}
+	/* active state */
+	input:focus ~ label,
+	input:valid ~ label {
+		top: -20px;
+		font-size: 14px;
+		color: #d9b44a;
+	}
+	/* BOTTOM BARS ================================= */
+	.bar {
+		position: relative;
+		display: block;
+		width: 300px;
+	}
+	.bar:before,
+	.bar:after {
+		content: "";
+		height: 2px;
+		width: 0;
+		bottom: 1px;
+		position: absolute;
+		background: #d9b44a;
+		transition: 0.2s ease all;
+		-moz-transition: 0.2s ease all;
+		-webkit-transition: 0.2s ease all;
+	}
+	.bar:before {
+		left: 50%;
+	}
+	.bar:after {
+		right: 50%;
+	}
+	/* active state */
+	input:focus ~ .bar:before,
+	input:focus ~ .bar:after {
+		width: 50%;
+	}
+	/* HIGHLIGHTER ================================== */
+	.highlight {
+		position: absolute;
+		height: 60%;
+		width: 100px;
+		top: 25%;
+		left: 0;
+		pointer-events: none;
+		opacity: 0.5;
+	}
+	/* active state */
+	input:focus ~ .highlight {
+		-webkit-animation: inputHighlighter 0.3s ease;
+		-moz-animation: inputHighlighter 0.3s ease;
+		animation: inputHighlighter 0.3s ease;
+	}
+	/* ANIMATIONS ================ */
+	@-moz-keyframes inputHighlighter {
+		from {
+			background: #d9b44a;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	@keyframes inputHighlighter {
+		from {
+			background: #d9b44a;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	@media only screen and (max-width: 1612px) {
+		#contactform{
+    flex-direction: column;
+	width: 50%;
+    min-height: 100%;
+		}
+		#picture{
+width: 70%;
+		}
+		#form{
+			width: 100%;
+			height: 70%;
+		}
+	}
+
 </style>

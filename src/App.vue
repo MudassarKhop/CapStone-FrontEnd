@@ -18,4 +18,10 @@
 		text-align: center;
 		color: #2c3e50;
 	}
+	p{
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+	}
+	h1{
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
 </style>
