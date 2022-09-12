@@ -63,6 +63,13 @@ const routes = [
 		},
 	},
 	{
+		path: "/profile",
+		name: "profile",
+		component: function () {
+			return import(/* webpackChunkName: "about" */ "../views/Profile.vue");
+		},
+	},
+	{
 		path: "/dashboard",
 		name: "dashboard",
 		component: function () {

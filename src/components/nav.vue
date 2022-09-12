@@ -53,27 +53,47 @@
 						</a>
 					</li>
 				</ul>
-				<div id="cart">
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<router-link to="/profile"
-								><i class="fa-solid fa-user"></i
-							></router-link>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<router-link to="/cart"
-								><i class="fa-solid fa-cart-shopping"></i
-							></router-link>
-						</a>
-					</li>
+				<div id="cart" v-if="user">
+					<!-- <div> -->
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<router-link to="/profile"
+									><i class="fa-solid fa-user"></i
+								></router-link>
+							</a>
+						</li>
+						<li class="nav-item" v-if="admin">
+							<a class="nav-link" href="#">
+								<router-link to="/dashboard"
+									><i class="fa-solid fa-user"></i
+								></router-link>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<router-link to="/cart"
+									><i class="fa-solid fa-cart-shopping"></i
+								></router-link>
+							</a>
+						</li>
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
 	</nav>
 </template>
-<script></script>
+<script>
+	export default {
+		computed: {
+			user() {
+				return this.$store.state.user;
+			},
+			admin() {
+				return this.$store.state.admin;
+			},
+		},
+	};
+</script>
 <style scoped>
 	@font-face {
 		font-family: Von;

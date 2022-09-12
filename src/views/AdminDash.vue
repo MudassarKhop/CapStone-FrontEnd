@@ -97,6 +97,97 @@
 					<div id="buttons">
 						<div
 							class="modal fade"
+							id="exampleModalToggle5"
+							aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel"
+							tabindex="-1"
+						>
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5
+											class="modal-title text-light"
+											id="exampleModalToggleLabel"
+										>
+											Flights
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<table>
+											<thead>
+												<tr>
+													<th scope="col"><u>Flight ID</u></th>
+													<th scope="col"><u>Flight Date</u></th>
+													<th scope="col"><u>From Destination</u></th>
+													<th scope="col"><u>FDA</u></th>
+													<th scope="col"><u>To Destination</u></th>
+													<th scope="col"><u>TDA</u></th>
+													<th scope="col"><u>Jet ID</u></th>
+													<th scope="col"><u>Duration</u></th>
+													<th scope="col"><u>Img1</u></th>
+													<th scope="col"><u>Img2</u></th>
+													<th scope="col"><u>Img3</u></th>
+													<th scope="col"><u>Img4</u></th>
+													<th scope="col"><u>Boarding</u></th>
+													<th scope="col"><u>Departure</u></th>
+													<th scope="col"><u>QR</u></th>
+													<th scope="col"><u>Information</u></th>
+												</tr>
+											</thead>
+											<tbody
+												v-for="flight in flights"
+												:key="flight.id"
+												:flight="flight"
+											>
+												<tr>
+													<td data-label="Flight ID">{{ flight.flight_id }}</td>
+													<td data-label="Flight Date">
+														{{ flight.flight_date }}
+													</td>
+													<td data-label="From Destination">
+														{{ flight.from_destination }}
+													</td>
+													<td data-label="FDA">{{ flight.fda }}</td>
+													<td data-label="To Destination">
+														{{ flight.to_destination }}
+													</td>
+													<td data-label="TDA">{{ flight.tda }}</td>
+													<td data-label="Jet ID">{{ flight.jet_id }}</td>
+													<td data-label="Duration">{{ flight.duration }}</td>
+													<td data-label="Img1">{{ flight.img1 }}</td>
+													<td data-label="Img2">{{ flight.img2 }}</td>
+													<td data-label="Img3">{{ flight.img3 }}</td>
+													<td data-label="Img4">{{ flight.img4 }}</td>
+													<td data-label="Boarding">{{ flight.boarding }}</td>
+													<td data-label="Departure">{{ flight.departure }}</td>
+													<td data-label="QR">{{ flight.qr }}</td>
+													<td data-label="Information">{{ flight.info }}</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div>
+						<button
+							id="btn"
+							class="btn"
+							data-bs-toggle="modal"
+							href="#exampleModalToggle5"
+							role="button"
+						>
+							<h1><i class="fa-solid fa-eye"></i> Table</h1>
+							<p>view table</p>
+						</button>
+						<div
+							class="modal fade"
 							id="exampleModalToggle2"
 							aria-hidden="true"
 							aria-labelledby="exampleModalToggleLabel2"
@@ -763,10 +854,11 @@
 <style scoped>
 	#dashboard {
 		background-color: #384a2f;
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+
 		justify-content: center;
 		align-content: center;
 		padding: 20px;
@@ -1024,6 +1116,9 @@
 		letter-spacing: 1px;
 		text-align: center;
 		text-shadow: 1px 1px 2px black;
+	}
+	.fa-eye {
+		color: #d9b44a;
 	}
 	.fa-instagram {
 		border-radius: 50%;
@@ -1370,52 +1465,57 @@
 		overflow: hidden;
 	}
 
-	@media screen and (max-width: 600px) {
-		table {
-			border: 0;
+	@media only screen and (max-width: 760px),
+		(min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Force table to not be like tables anymore */
+		table,
+		thead,
+		tbody,
+		th,
+		td,
+		tr {
+			display: block;
+		}
+		th {
+			padding-bottom: 10%;
 		}
 
-		table caption {
-			font-size: 1.3em;
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+			/* position: absolute;
+			top: -9999px;
+			left: -9999px; */
+			text-decoration: underline;
 		}
 
-		table thead {
+		tr {
+			margin: 0 0 1rem 0;
+		}
+
+		td {
+			/* Behave  like a "row" */
 			border: none;
-			clip: rect(0 0 0 0);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
+			position: relative;
+			padding-left: 80%;
+		}
+		/* .tableData {
+	   padding-left: 20%;
+	 } */
+		td:before {
 			position: absolute;
-			width: 1px;
+			top: -2px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+			padding-bottom: 10%;
 		}
 
-		table tr {
-			/* border-bottom: 3px solid #ddd; */
-			display: block;
-			margin-bottom: 0.625em;
-		}
-
-		table td {
-			/* border-bottom: 1px solid #ddd; */
-			display: block;
-			font-size: 0.8em;
-			text-align: right;
-		}
-
-		table td::before {
-			/*
-	   * aria-label has no advantage, it won't be read inside a table
-	   content: attr(aria-label);
-	   */
-			content: attr(data-label);
-			float: left;
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-
-		table td:last-child {
-			border-bottom: 0;
+		.table > :not(caption) > * > * {
+			padding: 2.5rem 0.5rem;
+			background-color: var(--bs-table-bg);
+			border-bottom-width: 1px;
+			box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 		}
 	}
 
@@ -1556,5 +1656,65 @@
 		border: 3px solid #384a2f;
 		margin-bottom: 10px;
 		height: 40px;
+	}
+	@media only screen and (max-width: 1315px) {
+		#container {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+		}
+
+		#buttons {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+			height: 20%;
+			padding: 20px;
+		}
+		#btn {
+			width: 80%;
+			height: 100%;
+		}
+		#sidedetails1 {
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			align-items: center;
+		}
+		#img img {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			height: 50%;
+			width: 50%;
+		}
+		#name {
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			align-items: center;
+		}
+		#sidedetails1 {
+			width: 100%;
+			height: 20%;
+		}
+		#sidedetails2 {
+			display: none;
+		}
+		#table {
+			display: none;
+		}
+		#top {
+			width: 100%;
+		}
+		#mainpanel {
+			width: 100%;
+		}
+		#sidebar {
+			width: 100%;
+		}
 	}
 </style>

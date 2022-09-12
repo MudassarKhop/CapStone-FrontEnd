@@ -47,7 +47,38 @@
 		</div>
 	</section>
 </template>
-<script></script>
+<script>
+	export default {
+		computed: {
+			user() {
+				return this.$store.state.user;
+			},
+		},
+
+		data() {
+			return {
+				pname: "",
+				psurname: "",
+				pemail: "",
+				password: "",
+				pcell: "",
+				p_role: "",
+			};
+		},
+		methods: {
+			register() {
+				this.$store.dispatch("register", {
+					pemail: this.pemail,
+					password: this.password,
+					pname: this.pname,
+					psurname: this.psurname,
+					pcell: this.pcell,
+					p_role: this.p_role,
+				});
+			},
+		},
+	};
+</script>
 <style scoped>
 	#contact {
 		background-color: #222222;

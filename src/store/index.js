@@ -2,10 +2,12 @@ import { createStore } from "vuex";
 
 export default createStore({
 	state: {
+		admin : false ,
+		user : null,
 		flight: null,
 		flights: null,
-		passenger:null,
-		passengers:null,
+		passenger: null,
+		passengers: null,
 		jet: null,
 		jets: null,
 		asc: true,
@@ -13,6 +15,9 @@ export default createStore({
 	},
 	getters: {},
 	mutations: {
+		setUser: (state, user) => {
+			state.user = user;
+		},
 		setJwt: (state, jwt) => {
 			state.jwt = jwt;
 		},
@@ -128,38 +133,64 @@ export default createStore({
 		// 			}
 		// 		});
 		// },
-		login: async (context, payload) => {
+		register : async (context, payload) => {
 			let res = await fetch(
-				`https://capstone-api-mudassar.herokuapp.com/passengers/login`,
-				{
-					method: "POST",
-					// mode: "no-cors",
-					body: JSON.stringify({
-						pemail: payload.pemail,
-						password: payload.password,
-					}),
-					headers: {
-						"Content-type": "application/json; charset=UTF-8",
-					},
-				}
-			);
+					`https://capstone-api-mudassar.herokuapp.com/passengers/register`,
+					{
+				method: "POST",
+				// mode: "no-cors",
+				body: JSON.stringify(payload),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+				},
+		})
+		.then((res) => res.json())
+		.then((data) => {
+			console.log(data)
+			
+		})
+		},
+
+		login: async (context, payload) => {
+			0;
+			// let res = await fetch(`http://localhost:6969/passengers/login`, {
+				let res = await fetch(
+					`https://capstone-api-mudassar.herokuapp.com/passengers/login`,
+					{
+				method: "POST",
+				// mode: "no-cors",
+				body: JSON.stringify({
+					pemail: payload.pemail,
+					password: payload.password,
+				}),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8",
+				},
+			});
 
 			let data = await res.json();
-			console.log(data);
-			if (data.jwt) {
-				context.commit("setJwt", data.jwt);
+			console.log(data.token);
+			if (data.token) {
+				context.commit("setJwt", data.token);
 				// Verify jwt
-				fetch("https://capstone-api-mudassar.herokuapp.com/passengers/verify", {
+				// fetch("http://localhost:6969/passengers/verify", {
+					fetch("https://capstone-api-mudassar.herokuapp.com/passengers/verify", {
 					headers: {
 						"Content-Type": "application/json",
-						"x-auth-token": data.jwt,
+						"x-auth-token": data.token,
 					},
 				})
 					.then((res) => res.json())
 					.then((user) => {
-						context.commit("setUser", user);
+						// console.log(user);
+						context.commit("setUser", user.user);
 						console.log(user);
-						context.dispatch("getPost", user);
+						if (user.user.p_role === "admin") {
+							context.state.admin = true
+						} else {
+							context.state.admin = false;
+						}
+						// context.dispatch("getPost", user);
 					});
 			} else {
 				alert("User not found");
@@ -184,10 +215,13 @@ export default createStore({
 				.then((json) => context.commit("setPassengers", json));
 		},
 		deletePassenger: async (context, id) => {
-			await fetch("https://capstone-api-mudassar.herokuapp.com/passengers/" + id, {
-				// await fetch("http://localhost:3000/cars/" + id, {
-				method: "DELETE",
-			})
+			await fetch(
+				"https://capstone-api-mudassar.herokuapp.com/passengers/" + id,
+				{
+					// await fetch("http://localhost:3000/cars/" + id, {
+					method: "DELETE",
+				}
+			)
 				.then((res) => res.json())
 				.then((data) => {
 					// console.log(data);
