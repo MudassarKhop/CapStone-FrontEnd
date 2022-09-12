@@ -1,45 +1,45 @@
 <template>
 	<section id="contact">
 		<div id="form">
-			<form action="https://formspree.io/f/xeqdenlz" method="POST">
+			<form @submit.prevent="register">
 				<div id="heading">
 					<h1>Register With <span>Us</span></h1>
 					<p>sign up to unlock member perks only.</p>
 				</div>
 				<div id="inputts">
 					<div class="group">
-						<input type="text" name="fullname" required />
+						<input type="text" name="fullname" v-model="pname" required />
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Name</label>
 					</div>
 					<div class="group">
-						<input type="text" name="fullname" required />
+						<input type="text" name="fullname" v-model="psurname" required />
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Surname</label>
 					</div>
 					<div class="group">
-						<input type="text" name="email" required />
+						<input type="text" name="email" v-model="pemail" required />
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Email</label>
 					</div>
 					<div class="group">
-						<input type="text" name="phone number" required />
+						<input type="text" name="phone number" v-model="password" required />
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Password</label>
 					</div>
 					<div class="group">
-						<input type="text" name="message" required />
+						<input type="text" name="message" v-model="pcell" required />
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Phone Number</label>
 					</div>
 				</div>
 				<!-- your other form fields go here -->
-				<button class="btn text-light" type="submit">Send</button>
+				<button class="btn text-light" type="submit">Register</button>
 			</form>
 			<router-link style="margin-top: 20px" to="/login"
 				>already have an account? sign in.</router-link
@@ -62,7 +62,7 @@
 				pemail: "",
 				password: "",
 				pcell: "",
-				p_role: "",
+				p_role: "user",
 			};
 		},
 		methods: {
