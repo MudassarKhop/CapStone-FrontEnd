@@ -177,6 +177,7 @@
 							</div>
 						</div>
 						<button
+							style="display: none"
 							id="btn"
 							class="btn"
 							data-bs-toggle="modal"
@@ -854,7 +855,7 @@
 <style scoped>
 	#dashboard {
 		background-color: #384a2f;
-		min-height: 100vh;
+		height: 100vh;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
