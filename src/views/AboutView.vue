@@ -30,7 +30,8 @@
 				</div>
 			</div>
 			<div id="child2">
-				<img class="img img-fluid"
+				<img
+					class="img img-fluid"
 					style="min-width: 750px; min-height: 380px; margin-top: 10%"
 					src="https://i.postimg.cc/yYPVfD5B/kindpng-2430888.png"
 					alt=""
@@ -82,8 +83,7 @@
 		</div>
 	</section>
 	<section id="pilots">
-		<div class="mother1
-		">
+		<div class="mother1">
 			<div id="child22">
 				<div id="info2">
 					<figure class="snip1376">
@@ -95,8 +95,8 @@
 							<h2>Sean Paul</h2>
 							<h3>chief captain</h3>
 							<p>
-								I'm looking for something that can deliver a 50-pound payload of
-								snow on a small feminine target. Can you
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+								consectetur ipsam harum et? Odio.kd weufhiweuh uefhwehheifuh
 							</p>
 						</figcaption>
 					</figure>
@@ -106,11 +106,11 @@
 							alt="sample47"
 						/>
 						<figcaption>
-							<h2>Pete Stevenson</h2>
+							<h2>Pete Steven</h2>
 							<h3>co-pilot</h3>
 							<p>
-								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
-								What's misunderstood about you? Calvin:
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+								consectetur ipsam harum et? Odio.kd weufhiweuh uefhwehheifuh
 							</p>
 						</figcaption>
 					</figure>
@@ -123,8 +123,8 @@
 							<h2>Riley Martin</h2>
 							<h3>co-pilot</h3>
 							<p>
-								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
-								What's misunderstood about you? Calvin:
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+								consectetur ipsam harum et? Odio.kd weufhiweuh uefhwehheifuh
 							</p>
 						</figcaption>
 					</figure>
@@ -134,11 +134,11 @@
 							alt="sample47"
 						/>
 						<figcaption>
-							<h2>Karen Denvers</h2>
+							<h2>Karen Den</h2>
 							<h3>commanding officer</h3>
 							<p>
-								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
-								What's misunderstood about you? Calvin:
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+								consectetur ipsam harum et? Odio.kd weufhiweuh uefhwehheifuh
 							</p>
 						</figcaption>
 					</figure>
@@ -148,11 +148,11 @@
 							alt="sample47"
 						/>
 						<figcaption>
-							<h2>Carol Sanders</h2>
+							<h2>Carol Sand</h2>
 							<h3>floor officer</h3>
 							<p>
-								Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes:
-								What's misunderstood about you? Calvin:
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+								consectetur ipsam harum et? Odio.kd weufhiweuh uefhwehheifuh
 							</p>
 						</figcaption>
 					</figure>
@@ -259,9 +259,7 @@
 		</div>
 	</section>
 </template>
-<script>
-
-</script>
+<script></script>
 <style scoped>
 	* {
 		letter-spacing: 1px;
@@ -276,7 +274,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-content: center;                                         
+		align-content: center;
 	}
 	#pilots {
 		background-color: #222222;
@@ -355,9 +353,9 @@
 	#info2 {
 		gap: 20px;
 		display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		/* border: 1px solid purple; */
 	}
@@ -510,9 +508,9 @@
 	.content {
 		width: 50%;
 		display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 	.center {
 		width: 100%;
@@ -582,7 +580,7 @@
 		display: none;
 	}
 	@media only screen and (max-width: 1515px) {
-		.mother{
+		.mother {
 			display: flex;
 			flex-direction: column;
 			flex-wrap: nowrap;
@@ -590,11 +588,10 @@
 			align-content: center;
 			width: 100%;
 		}
-		.mother1{
-
+		.mother1 {
 			width: 100%;
 		}
-		#info2{
+		#info2 {
 			display: flex;
 			flex-direction: column;
 			flex-wrap: nowrap;
@@ -602,29 +599,28 @@
 			align-items: center;
 			width: 100%;
 		}
-		#child1{
+		#child1 {
 			width: 100%;
-
 		}
-		#child22{
+		#child22 {
 			width: 100%;
 			justify-items: center;
 			align-items: center;
 		}
-		#faq{
+		#faq {
 			display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
 		}
-	.content{
-		width: 100%;
-	}
-	#child2{
-		display: none;
-	}
-	#child1{
-		margin-bottom: 30px;
-	}
+		.content {
+			width: 100%;
+		}
+		#child2 {
+			display: none;
+		}
+		#child1 {
+			margin-bottom: 30px;
+		}
 	}
 </style>

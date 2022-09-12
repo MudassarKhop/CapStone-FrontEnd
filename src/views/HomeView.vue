@@ -1,11 +1,19 @@
 <template>
 	<section id="home">
-<img class="img img-fluid" src="https://i.postimg.cc/FR8GPYmX/kindpng-2237032.png" alt="">
-<div id="inline">
-	<h1>THE FUTURE OF <span>LUXURY TRAVEL</span></h1>
-	<p>est.2022</p>
-	<div class="icons"><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i> </div>
-</div>
+		<img
+			class="img img-fluid"
+			src="https://i.postimg.cc/FR8GPYmX/kindpng-2237032.png"
+			alt=""
+		/>
+		<div id="inline">
+			<h1>THE FUTURE OF <span>LUXURY TRAVEL</span></h1>
+			<p>est.2022</p>
+			<div class="icons">
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+			</div>
+		</div>
 	</section>
 	<section id="testimonialsec">
 		<div id="stuuf">
@@ -18,7 +26,9 @@
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
 							voluptate tempora, ipsum officiis placeat explicabo consequatur.
 							Veritatis voluptatibus voluptatem, pariatur ullam, optio harum sit
-							dolorem ab doloribus atque minima dolorum! Lorem ipsum dolor sit ur eaque maiores fuga deserunt eius repudiandae cumque a nostrum excepturi aperiam?
+							dolorem ab doloribus atque minima dolorum! Lorem ipsum dolor sit
+							ur eaque maiores fuga deserunt eius repudiandae cumque a nostrum
+							excepturi aperiam?
 						</p>
 					</div>
 					<div id="divide2">
@@ -151,35 +161,15 @@
 					</div>
 				</router-link>
 			</div>
-			<div class="box">
-				<div class="imgBx">
-					<img
-						src="https://i.postimg.cc/3Nb2rQmL/shutterstock-363803066.webp"
-					/>
-				</div>
-				<router-link to="/flights">
-					<div class="content">
-						<div>
-							<h2>Beijing, China</h2>
-							<p>
-								The Great Wall of China is a series of fortifications that were
-								built across the historical northern borders of ancient China.
-							</p>
-						</div>
-					</div>
-				</router-link>
-			</div>
 		</div>
 	</section>
 </template>
 
 <script>
-export default {
-		
-	methods:{}
+	export default {
+		methods: {},
 	};
-	
-	</script>
+</script>
 <style scoped>
 	@font-face {
 		font-family: Aven;
@@ -193,7 +183,7 @@ export default {
 		font-family: Von;
 		src: url("../assets/Vonique\ 92_D.otf");
 	}
-	.icons{
+	.icons {
 		margin-top: 20px;
 	}
 	.fa-instagram {
@@ -236,14 +226,13 @@ export default {
 		transition: 0.3s;
 	}
 	.fa-facebook:hover {
-	
-		color:#d9b44a;
+		color: #d9b44a;
 	}
 	.fa-twitter:hover {
 		color: #d9b44a;
 	}
 	.fa-instagram:hover {
-		color:#d9b44a;
+		color: #d9b44a;
 	}
 	* {
 		letter-spacing: 1px;
@@ -263,32 +252,31 @@ export default {
 		color: white;
 		/* information section */
 	}
-	span{
-
+	span {
 		color: #d9b44a;
 	}
-	#home img{
+	#home img {
 		width: 90%;
 		height: 50%;
 		/* aspect-ratio: 1;
 		background-size: cover; */
 	}
-#home h1{
-	margin-top: 20px;
+	#home h1 {
+		margin-top: 20px;
 		font-family: Von;
 		letter-spacing: 2px;
 		font-size: 50px;
 	}
 	#testimonialsec:before {
-    position: absolute;
-    content: "";
-    z-index: 2;
-    bottom: 100%;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-image: linear-gradient(to bottom, transparent 0%, black 100%);
-}
+		position: absolute;
+		content: "";
+		z-index: 2;
+		bottom: 100%;
+		left: 0;
+		width: 100%;
+		height: 200px;
+		background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+	}
 	#testimonialsec {
 		background-color: #222222;
 		min-height: 100vh;
@@ -374,7 +362,6 @@ export default {
 		color: #84939f;
 		text-align: center;
 		letter-spacing: 1px;
-
 	}
 	#divide2 {
 		width: 50%;
@@ -603,76 +590,74 @@ export default {
 	}
 	/* informations cards */
 	@media only screen and (max-width: 1315px) {
-		#home img{
-			display:none;
+		#home img {
+			display: none;
 		}
-		#home h1{
+		#home h1 {
 			text-align: center;
 			font-size: 40px;
 		}
-		#card1{
+		#card1 {
 			display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-	min-width: 20%;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			min-width: 20%;
 		}
-		#card2{
+		#card2 {
 			display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-	min-width: 70%;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			min-width: 70%;
 		}
-		#divide1{
+		#divide1 {
 			min-height: 500px;
-			min-width:100%;
-			
+			min-width: 100%;
 		}
-		#divide1 p{
+		#divide1 p {
 			padding: 20px;
 			text-align: center;
 		}
-		#divide2{
+		#divide2 {
 			min-height: 50%;
-			min-width:100%;
+			min-width: 100%;
 		}
-		#stuuf{
+		#stuuf {
 			min-height: 100%;
 		}
-.stuff1{
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	}
-	.stuff2{
-		display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	}
-	#divide4{
-		min-height: 500px;
-			min-width:100%;
-	}
-	#card11{
+		.stuff1 {
 			display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-	min-width: 70%;
+			flex-direction: column;
+			flex-wrap: wrap;
 		}
-		#card11 h1{
+		.stuff2 {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+		#divide4 {
+			min-height: 500px;
+			min-width: 100%;
+		}
+		#card11 {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			min-width: 70%;
+		}
+		#card11 h1 {
 			margin-top: 30px;
 			margin-bottom: 30px;
-
 		}
-		#card11 p{
+		#card11 p {
 			padding: 50px;
 		}
-		#card22{
+		#card22 {
 			display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-	min-width: 70%;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			min-width: 70%;
 		}
-		.container2{
+		.container2 {
 			gap: 10px;
 			margin-bottom: 20px;
 			margin-top: 20px;

@@ -26,6 +26,7 @@
 									<div style="width: 65%">
 										<p
 											style="
+												font-size: 15px;
 												text-align: start;
 												margin-left: 8px;
 												margin-top: 10px;
@@ -44,6 +45,7 @@
 									<div style="width: 65%">
 										<p
 											style="
+												font-size: 15px;
 												text-align: start;
 												margin-left: 8px;
 												margin-top: 10px;
@@ -72,16 +74,16 @@
 								</div>
 								<div id="updatetext">
 									<p
-										style="color: #8c9399; margin-bottom: 0; text-align: start"
+										style="color: #8c9399; margin-bottom: 0; text-align: center"
 									>
 										Project: Cap-Stone
 									</p>
 									<p
-										style="color: #8c9399; margin-bottom: 0; text-align: start"
+										style="color: #8c9399; margin-bottom: 0; text-align: center"
 									>
 										Duration: 3 Weeks
 									</p>
-									<p style="color: #8c9399; text-align: start">
+									<p style="color: #8c9399; text-align: center">
 										Owner: Life Choices
 									</p>
 								</div>
@@ -760,7 +762,7 @@
 </script>
 <style scoped>
 	#dashboard {
-		background-color:  #384a2f;
+		background-color: #384a2f;
 		height: 100vh;
 		display: flex;
 		flex-direction: row;
@@ -837,7 +839,6 @@
 		gap: 50px;
 		background-color: #2b2c4b;
 		border-radius: 12px;
-
 	}
 	#middle1 {
 		width: 31%;
@@ -877,7 +878,7 @@
 		align-items: center;
 	}
 	#img img {
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		border-radius: 50%;
 		height: 75%;
 		width: 75%;
@@ -896,7 +897,7 @@
 		align-content: flex-start;
 	}
 	#name h1 {
-		font-size: 25px;
+		font-size: 20px;
 		letter-spacing: 1px;
 		color: white;
 		margin-bottom: 0 !important;
@@ -924,12 +925,12 @@
 		width: 23%;
 		border-radius: 12px;
 		background-color: #02022e;
-		border: 3px solid  #384a2f;
+		border: 3px solid #384a2f;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 		text-align: start;
 		display: flex;
 		flex-direction: column;
-		padding: 25px;
+		padding: 10px;
 		transition: 0.4s ease;
 	}
 	#btn:hover {
@@ -1036,7 +1037,7 @@
 		height: 80px;
 		width: 80px;
 		transition: 0.3s;
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		transition: 1s;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
@@ -1052,7 +1053,7 @@
 		height: 80px;
 		width: 80px;
 		transition: 0.3s;
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		transition: 1s;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
@@ -1068,7 +1069,7 @@
 		height: 80px;
 		width: 80px;
 		transition: 0.3s;
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		transition: 1s;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
@@ -1084,7 +1085,7 @@
 		height: 80px;
 		width: 80px;
 		transition: 0.3s;
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		transition: 1s;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
@@ -1100,7 +1101,7 @@
 		height: 80px;
 		width: 80px;
 		transition: 0.3s;
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		transition: 1s;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
@@ -1126,7 +1127,7 @@
 		height: 80px;
 		width: 80px;
 		transition: 0.3s;
-		border: 5px solid  #384a2f;
+		border: 5px solid #384a2f;
 		transition: 1s;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
@@ -1309,7 +1310,7 @@
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		background:  #384a2f;
+		background: #384a2f;
 	}
 
 	/* Handle on hover */
@@ -1330,7 +1331,7 @@
 	}
 	::-webkit-scrollbar-thumb:horizontal {
 		display: none;
-		background:  #384a2f;
+		background: #384a2f;
 		border-radius: 10px;
 	}
 	table th {
@@ -1462,7 +1463,7 @@
 		flex-direction: row;
 		border-radius: 12px;
 		background-color: #020233;
-		border: 3px solid  #384a2f;
+		border: 3px solid #384a2f;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	#stock2 {
@@ -1472,7 +1473,7 @@
 		flex-direction: row;
 		border-radius: 12px;
 		background-color: #020233;
-		border: 3px solid  #384a2f;
+		border: 3px solid #384a2f;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	#update {
@@ -1483,7 +1484,7 @@
 		margin: auto;
 		background-color: #02022e;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-		border: 3px solid  #384a2f;
+		border: 3px solid #384a2f;
 	}
 	#mac {
 		height: 60%;
@@ -1497,7 +1498,6 @@
 	#updatetext {
 		height: 30%;
 		margin: auto;
-		width: 58%;
 		/* border: 1px solid red; */
 	}
 	.modal {
