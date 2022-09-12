@@ -1,63 +1,58 @@
 <template>
 	<section id="contact">
-			<div id="form">
-				<form
-  action="https://formspree.io/f/xeqdenlz"
-  method="POST"
->
-<div id="heading">
-	<h1>Register With <span>Us</span></h1>
-							<p>sign up to unlock member perks only.</p>
-</div>
-<div id="inputts">
-
-	<div class="group">
-		<input type="text" name="fullname" required />
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Name</label>
-	</div>
-    <div class="group">
-		<input type="text" name="fullname" required />
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Surname</label>
-	</div>
-	<div class="group">
-		<input type="text" name="email" required />
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Email</label>
-	</div>
-	<div class="group">
-		<input type="text" name="phone number" required />
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Password</label>
-	</div>
-	<div class="group">
-		<input type="text" name="message" required />
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Phone Number</label>
-	</div>
-</div>
-  <!-- your other form fields go here -->
-  <button class="btn text-light" type="submit">Send</button>
-</form>
-<router-link style="margin-top:20px;" to="/login">already have an account? sign in.</router-link></div>
-
-
-
+		<div id="form">
+			<form action="https://formspree.io/f/xeqdenlz" method="POST">
+				<div id="heading">
+					<h1>Register With <span>Us</span></h1>
+					<p>sign up to unlock member perks only.</p>
+				</div>
+				<div id="inputts">
+					<div class="group">
+						<input type="text" name="fullname" required />
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Name</label>
+					</div>
+					<div class="group">
+						<input type="text" name="fullname" required />
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Surname</label>
+					</div>
+					<div class="group">
+						<input type="text" name="email" required />
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Email</label>
+					</div>
+					<div class="group">
+						<input type="text" name="phone number" required />
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Password</label>
+					</div>
+					<div class="group">
+						<input type="text" name="message" required />
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Phone Number</label>
+					</div>
+				</div>
+				<!-- your other form fields go here -->
+				<button class="btn text-light" type="submit">Send</button>
+			</form>
+			<router-link style="margin-top: 20px" to="/login"
+				>already have an account? sign in.</router-link
+			>
+		</div>
 	</section>
 </template>
-<script>
-</script>
+<script></script>
 <style scoped>
 	#contact {
 		background-color: #222222;
 		min-height: 80vh;
-		/* padding-top: 4%; */
+		padding: 1%;
 
 		display: flex;
 		flex-direction: row;
@@ -65,34 +60,34 @@
 		justify-content: center;
 		align-items: center;
 	}
-	#form{
-width: 500px;
-padding: 50px;
-border-radius: 12px;
-background-color: #222c1d;
-height: 90%;
-border: 1px solid #d9b44a;
+	#form {
+		width: 500px;
+		padding: 50px;
+		border-radius: 12px;
+		background-color: #222c1d;
+		height: 90%;
+		border: 1px solid #d9b44a;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-/* border: 1px solid red; */
+		justify-content: center;
+		align-items: center;
+		/* border: 1px solid red; */
 	}
 	.group {
 		position: relative;
 		margin-bottom: 25px;
 	}
-	#heading{
+	#heading {
 		margin-bottom: 30px;
 	}
-	#heading h1{
+	#heading h1 {
 		color: white;
 	}
-	#heading p{
+	#heading p {
 		color: white;
 	}
-	span{
+	span {
 		color: #d9b44a;
 	}
 	input {
@@ -105,7 +100,7 @@ align-items: center;
 		border-bottom: 1px solid #757575;
 		color: white;
 	}
-	.btn{
+	.btn {
 		margin-top: 30px;
 		width: 200px;
 		border: 1px solid #d9b44a;
@@ -209,20 +204,17 @@ min-height: 50%;
 		}
 		#picture img{ */
 
-			#form{
-				padding: 30px;
-				min-width: 100%;
-				min-height: 50%;
-			}
-			form{
-				padding: 20px;
-				min-height: 50%;
-			}
-			.btn{
-				margin-top: 0;
-			}
+		#form {
+			padding: 30px;
+			min-width: 100%;
+			min-height: 50%;
 		}
-	
-
+		form {
+			padding: 20px;
+			min-height: 50%;
+		}
+		.btn {
+			margin-top: 0;
+		}
+	}
 </style>
-

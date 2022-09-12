@@ -124,7 +124,7 @@
 							Travel to your location of choice in style with our private jets.
 						</p>
 					</div>
-					<div style="margin-top:10px" id="ul">
+					<div style="margin-top: 10px" id="ul">
 						<ul>
 							<li><i class="fa-solid fa-chevron-right"></i> Singapore</li>
 							<li><i class="fa-solid fa-chevron-right"></i> Bali</li>
@@ -133,7 +133,6 @@
 						</ul>
 					</div>
 				</div>
-			
 			</div>
 			<div class="line"></div>
 		</div>
@@ -168,7 +167,7 @@
 		gap: 20px;
 	}
 	#footer3 {
-		min-height: 5vh;
+		min-height: 6vh;
 		width: 100%;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -487,9 +486,9 @@
 			height: 10vh;
 			width: 100%;
 		}
-		#footer3 h1{
+		#footer3 h1 {
 			font-size: 11px;
-			padding-top:10px ;
+			padding-top: 10px;
 		}
 		.gap {
 			display: none;
